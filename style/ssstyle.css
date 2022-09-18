@@ -1,0 +1,548 @@
+.abtsection{
+    display:block;
+    margin-bottom: 30px;
+}
+#processvid{
+    width:45%;
+    height:350px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:30px;
+}
+/* .six{
+    display: none;
+}
+.three:hover .four{
+    display: none;
+}
+.three:hover .six{
+    display: block;
+    text-align: left;
+    margin-top:10px;
+    margin-right:10px;
+    margin-left:10px;
+    background-color: white;
+    padding:20px;
+} */
+.two{
+    opacity: 0;
+}
+.one:hover .gridcontent{
+    display: none;
+}
+.one{
+    position: relative;
+}
+.one:hover .gridimg{
+    opacity: 0.1;
+}
+.one:hover .two{
+    opacity:1;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    padding: 10px;
+    font-size:18px;
+    font-weight: 600;
+    color: black;
+    margin: 5px;
+}
+/* .hidden{
+    text-align: left;
+    margin-left:4%;
+}
+.griditem .hidden{
+    display: none;
+}
+.griditem:hover .hidden{
+    display: block;
+    margin-top:10px;
+} */
+.griditem:hover{
+    height:370px;
+}
+/* .griditem:hover .hiddenimage{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:70%;
+} */
+.content{
+    margin-left:50px;
+    margin-right:50px;
+}
+.abthead{
+    background-color: yellow;
+    padding:5px;
+}
+.abtcontent{
+    font-size: 20px;
+    margin-top:20px;
+}
+.abtlist{
+    font-size:20px;
+}
+#abtimg{
+    margin-top:100px;
+    height:400px;
+    width:400px;
+    border-radius: 10px;
+    margin-left:20px;
+    margin-right:50px;
+}
+.type{
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:30px;
+}
+.typehead{
+    text-align: center;
+    background-color: yellow;
+    padding:5px;
+}
+.typecontent{
+    margin-top:10px;
+    font-size: 20px;
+    text-align: center;
+}
+.typegrid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 2%;
+    grid-column-gap: 1%;
+}
+.griditem{
+    width:90%;
+    height:370px;
+    padding-top: 15px;
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+}
+.gridimg{
+    width:300px;
+    height:300px;
+    border-radius: 10px;
+}
+.gridcontent{
+    font-size: 22px;
+    color: black;
+    border-radius: 10px;
+    padding:10px;
+    margin-top:5px;
+}
+.flex{
+    margin-left:15%;
+}
+.purchaseflex{
+    display: flex;
+    margin-left:6%;
+}
+.purchase{
+    border: 4px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:15%;
+    margin-bottom: 30px;
+}
+.purchaseimg{
+    width:30px;
+    height:30px;
+}
+@media  screen and (min-width:430px ) and (max-width:600px){
+    #abtimg{
+        display: none;
+    }
+    .abtsection{
+        display: block;
+    }
+    .content{
+        margin-left:20px;
+        width: 90%;
+    }
+    .typegrid{
+        display: block;
+    }
+    .purchase{
+        padding:10px;
+    }
+    .purchaseflex{
+        display: block;
+        margin-left: -40px;
+    }
+    .gridimg{
+        height:370px;
+        width:370px;
+    }
+    .griditem{
+        margin-top:10px;
+        width: 100%;
+        height:445px;
+    }
+    #processvid{
+        width:80%;
+        height:200px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media  screen and (min-width:400px ) and (max-width:430px){
+    #abtimg{
+        display: none;
+    }
+    .content{
+        margin-left:20px;
+        width: 90%;
+    }
+    .typegrid{
+        display: block;
+    }
+    .purchase{
+        padding:10px;
+    }
+    .purchaseflex{
+        display: block;
+        margin-left: -40px;
+    }
+    .gridimg{
+        height:350px;
+        width:350px;
+    }
+    .griditem{
+        height:415px;
+        margin-top:10px;
+        width: 100%;
+    }
+    .abtsection{
+        display: block;
+    }
+    #processvid{
+        width:80%;
+        height:200px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media  screen and (min-width:360px ) and (max-width:400px){
+    #abtimg{
+        display: none;
+    }
+    .content{
+        margin-left:20px;
+        width: 90%;
+    }
+    .typegrid{
+        display: block;
+    }
+    .purchase{
+        padding:10px;
+    }
+    .purchaseflex{
+        display: block;
+        margin-left: -40px;
+    }
+    .gridimg{
+        height:320px;
+        width:320px;
+    }
+    .griditem{
+        margin-top:10px;
+        height:395px;
+        width: 100%;
+    }.abtsection{
+        display: block;
+    }
+    #processvid{
+        width:80%;
+        height:200px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media  screen and (min-width:300px ) and (max-width:360px){
+    #abtimg{
+        display: none;
+    }
+    .content{
+        margin-left:20px;
+        width: 90%;
+    }
+    .typegrid{
+        display: block;
+    }
+    .purchase{
+        padding:10px;
+    }
+    .purchaseflex{
+        display: block;
+        margin-left: -40px;
+    }
+    .gridimg{
+        height:280px;
+        width:280px;
+    }
+    .griditem{
+        height:345px;
+        margin-top:10px;
+        width: 100%;
+    }
+    .abtsection{
+        display: block;
+    }
+    #processvid{
+        width:80%;
+        height:150px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+/* @media  screen and (min-width:1000px ) and (max-width:1400px){
+    #abtimg{
+        display: none;
+    }
+    .content{
+        margin-left:20px;
+        width: 90%;
+    }
+    .typegrid{
+        margin-right: -5px;
+        margin-left: -5px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .griditem{
+        margin-top:20px;
+    }
+    .purchase{
+        padding:10px;
+    }
+    .purchaseflex{
+        display: block;
+        margin-left: -100px;
+    }
+    .gridimg{
+        height:210px;
+        width:210px;
+    }
+}  */
+@media  screen and (min-width:1450px ) and (max-width:1500px){
+    .gridimg{
+        height:290px;
+        width:290px;
+    }
+    .gridcontent{
+        font-size: 18px;
+    }
+    .griditem{
+        height:355px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem:hover{
+        height:340px;
+    }
+}
+@media  screen and (min-width:1400px ) and (max-width:1450px){
+    .gridimg{
+        height:280px;
+        width:280px;
+    }
+    .gridcontent{
+        font-size: 18px;
+    }
+    .griditem{
+        height:345px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem:hover{
+        height:330px;
+    }
+}
+@media  screen and (min-width:1350px ) and (max-width:1400px){
+    .gridimg{
+        height:270px;
+        width:270px;
+    }
+    .gridcontent{
+        font-size: 17px;
+    }
+    .griditem{
+        height:335px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem:hover{
+        height:320px;
+    }
+}
+@media  screen and (min-width:1300px ) and (max-width:1350px){
+    .gridimg{
+        height:260px;
+        width:260px;
+    }
+    .gridcontent{
+        font-size: 15px;
+    }
+    .griditem{
+        height:325px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem:hover{
+        height:310px;
+    }
+}
+@media  screen and (min-width:1250px ) and (max-width:1300px){
+    .gridimg{
+        height:250px;
+        width:250px;
+    }
+    .gridcontent{
+        font-size: 14px;
+    }
+    .griditem{
+        height:315px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem:hover{
+        height:300px;
+    }
+}
+@media  screen and (min-width:1200px ) and (max-width:1250px){
+    .gridimg{
+        height:240px;
+        width:240px;
+    }
+    .gridcontent{
+        font-size: 14px;
+    }
+    .griditem{
+        height:305px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem:hover{
+        height:290px;
+    }
+}
+@media  screen and (min-width:1150px ) and (max-width:1200px){
+    .gridimg{
+        height:230px;
+        width:230px;
+    }
+    .gridcontent{
+        font-size: 14px;
+    }
+    .griditem{
+        height:295px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:10%;
+    }
+    .griditem:hover{
+        height:280px;
+    }
+}
+@media  screen and (min-width:1100px ) and (max-width:1150px){
+    .gridimg{
+        height:220px;
+        width:220px;
+    }
+    .gridcontent{
+        font-size: 14px;
+    }
+    .griditem{
+        height:285px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:8%;
+    }
+    .griditem:hover{
+        height:270px;
+    }
+}
+@media  screen and (min-width:1050px ) and (max-width:1100px){
+    .gridimg{
+        height:200px;
+        width:200px;
+    }
+    .gridcontent{
+        font-size: 14px;
+    }
+    .griditem{
+        height:275px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:5%;
+    }
+    .griditem:hover{
+        height:260px;
+    }
+}
+@media  screen and (min-width:1000px ) and (max-width:1050px){
+    .gridimg{
+        height:190px;
+        width:190px;
+    }
+    .gridcontent{
+        font-size: 14px;
+    }
+    .griditem{
+        height:265px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:0;
+    }
+    .griditem:hover{
+        height:250px;
+    }
+} 

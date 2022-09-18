@@ -1,0 +1,1075 @@
+/*.fa-angle-left::before{
+    content:'<';
+    font-size:50px;
+    color: yellow;
+    background-color: darkblue;
+    border: 4px solid yellow;
+    border-radius:100px;
+    height:50px;
+    opacity: 1;
+}
+.fa-angle-right::before{
+    content:'>';
+    font-size:50px;
+    color: yellow;
+    background-color: darkblue;
+    border: 4px solid yellow;
+    border-radius:100px;
+    height:50px;
+    opacity: 1;
+}*/
+/*.customer-logos{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.slick-slide{
+    margin: 0 20px;
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}*/
+
+@keyframes scroll {
+    0% {
+       transform: translateX(0);
+   }
+    100% {
+       transform: translateX(calc(-350px * 7));
+   }
+}
+ .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+ .slider::before, .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 90;
+}
+ .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+ .slider::before {
+    left: 0;
+    top: 0;
+}
+ .slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+ .slider .slide {
+    height: 100px;
+    width: 250px;
+    opacity: 1;
+}
+ 
+a{
+    text-decoration: none;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+.carouselimg{
+    margin-right: auto;
+    margin-left: auto;
+    width:100%;
+    height:590px;
+}
+.features{
+    background-color: rgb(0, 166, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#featureshead{
+    text-align: center;
+    color: darkblue;
+}
+.grid1,.grid2{
+    display: flex;
+    text-align: center;
+    margin-top:30px;
+    margin-left:20%;
+    margin-right:20%;
+}
+.grid2{
+    margin-left:29%;
+}
+.griditem{
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+    width:40%;
+}
+.gridhead{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: darkblue;
+}
+.gridcontent{
+    font-size: 15px;
+}
+.lastitem{
+    margin-right: 0px;
+}
+.ourcompany,.process{
+    margin-top:30px;
+    margin-bottom: 60px;
+    margin-left:100px;
+    margin-right:100px;
+    display: flex;
+}
+.process{
+    margin-left:200px;
+    margin-right: 200px;
+}
+#ourcompanyhead{
+    background-color: #ffda44;
+    border: none;
+    padding:10px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+#producthead{
+    color: darkblue;
+    text-align: center;
+    margin-top:30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#ourcompanysubhead{
+    color: darkblue;
+    margin-top:15px;
+}
+#ourcompanypara{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#ourcompanybtn,#processbtn{
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    margin-top: 15px;
+}
+.products{
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.productname{
+    font-size: 25px;
+    margin-top:20px;
+}
+.productcard{
+    background-color: rgb(231, 231, 231);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 7px;
+}
+.productimg{
+    height:300px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#processhead{
+    color: darkblue;
+}
+#processpara{
+    margin-top: 15px;
+    font-size:20px;
+}
+#processvid{
+    height:320px;
+    width: 500px;
+    margin-left:50px;
+}
+.client{
+    display: flex;
+    margin-left: -15px;
+    margin-top:50px;
+    margin-bottom: 30px;
+}
+.clientimg{
+    margin-right: 10px;
+    width:180px;
+    height:100px;
+    opacity: 1;
+}
+#clienthead{
+    text-align: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: darkblue;
+    font-weight:600;
+}
+.typegrid1{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+    margin-bottom: 30px;
+    margin-left:30px;
+}
+.two{
+    opacity: 0;
+}
+.one:hover .gridcontent1{
+    display: none;
+}
+.one{
+    position: relative;
+}
+.one:hover .gridimg1{
+    opacity: 0.1;
+}
+.one:hover .two{
+    opacity:1;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    padding: 10px;
+    font-size:18px;
+    font-weight: 600;
+    color: black;
+    margin: 5px;
+}
+.griditem1:hover{
+    height:370px;
+}
+.griditem1{
+    width:88%;
+    padding-top: 15px;
+    height:370px;
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+}
+.gridimg1{
+    width:300px;
+    height:300px;
+    border-radius: 10px;
+}
+.gridcontent1{
+    font-size: 22px;
+    color: black;
+    border-radius: 10px;
+    padding:10px;
+    margin-top:10px;
+}
+#imgcompny{
+    margin-left:50px;
+    width: 520px;
+}
+@media  screen and (min-width:430px ) and (max-width:600px){
+    .slick-slide{
+        margin: 0 10px;
+        display: none;
+        float: left;
+        height: 300%;
+        min-height: 1px;
+    }
+    .slick-slide img{
+        width: 120%;
+    }
+    .ourcompany{
+        display: block;
+    }
+    .ourcompany,.process{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .process{
+        margin-left:20px;
+        margin-right: 20px;
+        display: block;
+    }
+    #imgcompny{
+        margin-top:20px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .products{
+        display: block;
+    }
+    .productimg{
+        width:200px;
+        height: 200px;
+    }
+    #processvid{
+        margin-top:20px;
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:200px;
+    }
+    .gridimg{
+        height:50px;
+        width:50px;
+    }
+    .grid1,.grid2{
+        display: block;
+        margin-left:5%;
+        margin-right: 0%;
+    }
+    .grid2{
+        margin-top: 0px;
+    }
+    .griditem{
+        padding: 10px;
+        margin-right: 5px;
+        margin-top:30px;
+        width:95%;
+    }
+    .gridhead{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .gridcontent{
+        font-size: 15px;
+    }
+    .lastitem{
+        margin-right: 0px;
+    }
+    #carouselExampleSlidesOnly{
+        display: block;
+    }
+    #landingimg1,#landingimg2{
+        height:300px;
+    }
+    .client{
+        display: block;
+        margin-left: 30%;
+    }
+    .productcard{
+        margin-top:20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+        scrollbar-width: 0px;
+    }
+    .typegrid1{
+        display: block;
+        margin-left:0px;
+    }
+    .gridimg1{
+        height:380px;
+        width:380px;
+    }
+    .griditem1{
+        height:440px;
+        margin-top:10px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media  screen and (min-width:400px ) and (max-width:430px){
+    .slick-slide{
+        margin: 0 10px;
+        display: none;
+        float: left;
+        height: 300%;
+        min-height: 1px;
+    }
+    .slick-slide img{
+        width: 120%;
+    }
+    .ourcompany{
+        display: block;
+    }
+    .ourcompany,.process{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .process{
+        margin-left:20px;
+        margin-right: 20px;
+        display: block;
+    }
+    #imgcompny{
+        margin-top:20px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .products{
+        display: block;
+    }
+    .productimg{
+        width:200px;
+        height: 200px;
+    }
+    #processvid{
+        margin-top:20px;
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:200px;
+    }
+    .gridimg{
+        height:50px;
+        width:50px;
+    }
+    .grid1,.grid2{
+        display: block;
+        margin-left:5%;
+        margin-right: 0%;
+    }
+    .grid2{
+        margin-top: 0px;
+    }
+    .griditem{
+        padding: 10px;
+        margin-right: 5px;
+        margin-top:30px;
+        width:95%;
+    }
+    .gridhead{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .gridcontent{
+        font-size: 15px;
+    }
+    .lastitem{
+        margin-right: 0px;
+    }
+    #carouselExampleSlidesOnly{
+        display: block;
+    }
+    #landingimg1,#landingimg2{
+        height:300px;
+    }
+    .client{
+        display: block;
+        margin-left: 30%;
+    }
+    .productcard{
+        margin-top:20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+        scrollbar-width: 0px;
+    }
+    .typegrid1{
+        display: block;
+        margin-left:0px;
+    }
+    .gridimg1{
+        height:350px;
+        width:350px;
+    }
+    .griditem1{
+        height:420px;
+        margin-top:10px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media  screen and (min-width:360px ) and (max-width:400px){
+    .slick-slide{
+        margin: 0 10px;
+        display: none;
+        float: left;
+        height: 300%;
+        min-height: 1px;
+    }
+    .slick-slide img{
+        width: 120%;
+    }
+    .ourcompany{
+        display: block;
+    }
+    .ourcompany,.process{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .process{
+        margin-left:20px;
+        margin-right: 20px;
+        display: block;
+    }
+    #imgcompny{
+        margin-top:20px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .products{
+        display: block;
+    }
+    .productimg{
+        width:200px;
+        height: 200px;
+    }
+    #processvid{
+        margin-top:20px;
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:200px;
+    }
+    .gridimg{
+        height:50px;
+        width:50px;
+    }
+    .grid1,.grid2{
+        display: block;
+        margin-left:5%;
+        margin-right: 0%;
+    }
+    .grid2{
+        margin-top: 0px;
+    }
+    .griditem{
+        padding: 10px;
+        margin-right: 5px;
+        margin-top:30px;
+        width:95%;
+    }
+    .gridhead{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .gridcontent{
+        font-size: 15px;
+    }
+    .lastitem{
+        margin-right: 0px;
+    }
+    #carouselExampleSlidesOnly{
+        display: block;
+    }
+    #landingimg1,#landingimg2{
+        height:300px;
+    }
+    .client{
+        display: block;
+        margin-left: 30%;
+    }
+    .productcard{
+        margin-top:20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+        scrollbar-width: 0px;
+    }
+    .typegrid1{
+        display: block;
+        margin-left:0px;
+    }
+    .gridimg1{
+        height:330px;
+        width:330px;
+    }
+    .griditem1{
+        height:400px;
+        margin-top:10px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media  screen and (min-width:300px ) and (max-width:360px){
+    .slick-slide{
+        margin: 0 10px;
+        display: none;
+        float: left;
+        height: 300%;
+        min-height: 1px;
+    }
+    .slick-slide img{
+        width: 120%;
+    }
+    .ourcompany{
+        display: block;
+    }
+    .ourcompany,.process{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .process{
+        margin-left:20px;
+        margin-right: 20px;
+        display: block;
+    }
+    #imgcompny{
+        margin-top:20px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .products{
+        display: block;
+    }
+    .productimg{
+        width:200px;
+        height: 200px;
+    }
+    #processvid{
+        margin-top:20px;
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:200px;
+    }
+    .gridimg{
+        height:50px;
+        width:50px;
+    }
+    .grid1,.grid2{
+        display: block;
+        margin-left:5%;
+        margin-right: 0%;
+    }
+    .grid2{
+        margin-top: 0px;
+    }
+    .griditem{
+        padding: 10px;
+        margin-right: 5px;
+        margin-top:30px;
+        width:95%;
+    }
+    .gridhead{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .gridcontent{
+        font-size: 15px;
+    }
+    .lastitem{
+        margin-right: 0px;
+    }
+    #carouselExampleSlidesOnly{
+        display: block;
+    }
+    #landingimg1,#landingimg2{
+        height:300px;
+    }
+    .client{
+        display: block;
+        margin-left: 30%;
+    }
+    .productcard{
+        margin-top:20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+        scrollbar-width: 0px;
+    }
+    .typegrid1{
+        display: block;
+        margin-left:0px;
+    }
+    .gridimg1{
+        height:290px;
+        width:290px;
+    }
+    .griditem1{
+        margin-top:10px;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+/*@media  screen and (min-width:1000px ) and (max-width:1400px){
+    .ourcompany{
+        display: block;
+    }
+    .ourcompany,.process{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .process{
+        margin-left:20px;
+        margin-right: 20px;
+        display: block;
+    }
+    #imgcompny{
+        margin-top:20px;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: 300px;
+    }
+    #processvid{
+        margin-top:20px;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height:300px;
+    }
+    .gridimg{
+        height:50px;
+        width:50px;
+    }
+    .grid1,.grid2{
+        display: block;
+        margin-left:5%;
+        margin-right: 0%;
+    }
+    .grid2{
+        margin-top: 0px;
+    }
+    .griditem{
+        padding: 10px;
+        margin-right: 5px;
+        margin-top:30px;
+        width:95%;
+    }
+    .gridhead{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .gridcontent{
+        font-size: 15px;
+    }
+    .lastitem{
+        margin-right: 0px;
+    }
+    #carouselExampleSlidesOnly{
+        display: block;
+    }
+    #landingimg1,#landingimg2{
+        height:400px;
+    }
+    .productcard{
+        margin-top:20px;
+        margin-right: 250px;
+        margin-left: 250px;
+    }
+    .client{
+        display: block;
+        margin-left: 20px;
+    }
+    .products{
+        display: block;
+    }
+    .pro{
+        padding-left: 40px;
+    }
+    .typegrid{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 10px;
+        margin-bottom: 30px;
+    }
+    .griditem1{
+        width:90%;
+        padding-top: 10px;
+        border-radius: 10px;
+        background-color: rgb(228, 228, 228);
+    }
+    .gridimg1{
+        width:95%;
+        height:95%;
+        border-radius: 10px;
+    }
+    .gridcontent1{
+        font-size: 22px;
+        color: black;
+        border-radius: 10px;
+        padding:10px;
+        margin-top:10px;
+    }
+}*/
+@media  screen and (min-width:1000px ) and (max-width:1400px){
+    .process{
+        margin-left:50px;
+        margin-right:50px;
+    }
+}
+@media  screen and (min-width:1450px ) and (max-width:1500px){
+    .gridimg1{
+        height:290px;
+        width:290px;
+    }
+    .gridcontent1{
+        font-size: 18px;
+    }
+    .griditem1{
+        height:355px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem1:hover{
+        height:340px;
+    }
+}
+@media  screen and (min-width:1400px ) and (max-width:1450px){
+    .gridimg1{
+        height:280px;
+        width:280px;
+    }
+    .gridcontent1{
+        font-size: 18px;
+    }
+    .griditem1{
+        height:345px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem1:hover{
+        height:330px;
+    }
+}
+@media  screen and (min-width:1350px ) and (max-width:1400px){
+    .gridimg1{
+        height:270px;
+        width:270px;
+    }
+    .gridcontent1{
+        font-size: 17px;
+    }
+    .griditem1{
+        height:335px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem1:hover{
+        height:320px;
+    }
+}
+@media  screen and (min-width:1300px ) and (max-width:1350px){
+    .gridimg1{
+        height:260px;
+        width:260px;
+    }
+    .gridcontent1{
+        font-size: 15px;
+    }
+    .griditem1{
+        height:325px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem1:hover{
+        height:310px;
+    }
+}
+@media  screen and (min-width:1250px ) and (max-width:1300px){
+    .gridimg1{
+        height:250px;
+        width:250px;
+    }
+    .gridcontent1{
+        font-size: 14px;
+    }
+    .griditem1{
+        height:315px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem1:hover{
+        height:300px;
+    }
+}
+@media  screen and (min-width:1200px ) and (max-width:1250px){
+    .gridimg1{
+        height:240px;
+        width:240px;
+    }
+    .gridcontent1{
+        font-size: 14px;
+    }
+    .griditem1{
+        height:305px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+    }
+    .griditem1:hover{
+        height:290px;
+    }
+}
+@media  screen and (min-width:1150px ) and (max-width:1200px){
+    .gridimg1{
+        height:230px;
+        width:230px;
+    }
+    .gridcontent1{
+        font-size: 14px;
+    }
+    .griditem1{
+        height:295px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:10%;
+    }
+    .griditem1:hover{
+        height:280px;
+    }
+}
+@media  screen and (min-width:1100px ) and (max-width:1150px){
+    .gridimg1{
+        height:220px;
+        width:220px;
+    }
+    .gridcontent1{
+        font-size: 14px;
+    }
+    .griditem1{
+        height:285px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:8%;
+    }
+    .griditem1:hover{
+        height:270px;
+    }
+}
+@media  screen and (min-width:1050px ) and (max-width:1100px){
+    .gridimg1{
+        height:200px;
+        width:200px;
+    }
+    .gridcontent1{
+        font-size: 14px;
+    }
+    .griditem1{
+        height:260px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:5%;
+    }
+    .griditem1:hover{
+        height:260px;
+    }
+}
+@media  screen and (min-width:1000px ) and (max-width:1050px){
+    .gridimg1{
+        height:190px;
+        width:190px;
+    }
+    .gridcontent1{
+        font-size: 14px;
+    }
+    .griditem1{
+        height:250px;
+    }
+    .one:hover .two{
+        font-size:15px;
+        font-weight: 500;
+        color: black;
+        margin: 5px;
+        top:0;
+    }
+    .griditem1:hover{
+        height:250px;
+    }
+} 

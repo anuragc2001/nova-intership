@@ -1,0 +1,275 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#nav2img1{
+    width:200px;
+}
+#nav2img2{
+    width:200px;
+    margin-left:5px;
+}
+#mobilelogo{
+    display: none;
+}
+#staticimg{
+    position: fixed;
+    z-index: 999;
+    height: 60px;
+    width: 60px;
+    border-radius:150px;
+    margin-left: 93%;
+    top:85%;
+}
+.navbar{
+    background-color: #ffda44;
+    color:darkblue;
+    width: 100%;
+}
+.headerimg{
+    width:30px;
+    height:30px;
+}
+.menu_icon{
+    display:none;
+}
+.menu{
+    display:none;
+}
+#navbar2{
+    background-color: white;
+    width: 100%;
+}
+#navbarSupportedContent{
+    font-size: 20px;
+}
+.nav-item{
+    margin-left:75px;
+    font-weight:600;
+}
+#navbar-item:hover{
+    color: darkblue;
+}
+.footer{
+    background-color: darkblue;
+    color: white;
+    padding-top: 20px;
+}
+#gst,.gstflex{
+    margin-left: 50px;
+}
+#gst{
+    font-size: 20px;
+}
+.gstflex{
+    display: flex;
+    margin-right: 50px;
+}
+#gst2{
+    margin-left:20%;
+}
+#gst1,#gst2{
+    font-size: 15px;
+}
+#footernav{
+    background-color: darkblue;
+    color:#ffda44;
+}
+#footerproducts{
+    color: white;
+    margin-top: 20px;
+}
+.para{
+    width:500px;
+    margin-left: 30px;
+}
+.footerlogo{
+    text-align: center;
+}
+#footerimg2{
+    margin-top:20px;
+}
+.list1,.list2{
+    font-size:20px;
+    list-style: none;
+}
+.footercontact{
+    text-align: center;
+    margin-right:50px;
+}
+#fpimg{
+    width:200px;
+    height:100px;
+    margin-left:-5px;
+}
+.footerimg{
+    width:30px;
+    height:30px;
+}
+#mobnav2img1,#mobnav2img2{
+    display: none;
+}
+@media  screen and (min-width:300px ) and (max-width:600px){
+    #mobilelogo{
+        display: block;
+        width: 50%;
+        margin-left: 2%;
+    }
+    #icon{
+        font-size: 40px;
+    }
+    .top{
+        display: flex;
+    }
+    .menu_icon{
+        display: block;
+        margin-top:15px;
+        margin-right:2%;
+        margin-left:5%;
+    }
+    .nav-wrapper > .top a.menu_icon i {
+        color: #444da1;
+        font-size: 40px;
+        padding-top: 5px;
+        transition: .2s ease;
+    }
+    #crosslogo{
+        float:left;
+        width:60%;
+    }
+    #navbar1{
+        display: none;
+    }
+    nav.menu{
+        display:block;
+        margin-top:-95px;
+        width: 100%;
+        height:105%;
+	    background-color: white;
+	    position: absolute;
+	    left: -450px;
+	    transition: .3s all;
+        z-index: 999;
+    }
+    nav.menu > a {
+        display: block;
+        margin-top:30px;
+        margin-left:50px;
+        font-size:20px;
+        color: black;
+    }
+    #cross{
+        float:right;
+        margin-right:10px;
+        margin-top:15px;
+        font-size:30px;
+    }
+    .menu_show {
+        left: 0!important;
+    }
+    #navbar2{
+        display: none;
+    }
+    .footercontact{
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .gstflex{
+        display: block;
+    }
+    #gst2{
+        margin-left:0%;
+        margin-top:10px;
+    }
+    #footerproducts{
+        margin-left:30px;
+        margin-bottom: 20px;
+    }
+    #staticimg{
+        position: fixed;
+        z-index: 999;
+        height: 60px;
+        width: 60px;
+        border-radius:150px;
+        margin-left: 84%;
+        top:88%;
+    }
+    #mobnav2img1{
+        width:130px;
+        margin-top:5px;
+        display: block;
+        margin-left:10px;
+    } 
+    #mobnav2img2{
+        width:130px;
+        margin-top:18px;
+        margin-left: 8px;
+        display: block;
+    }
+}
+@media  screen and (min-width:1000px ) and (max-width:1100px)
+{
+    #navbar2img{
+        width:200px;
+    }
+    #navbarSupportedContent{
+        font-size: 15px;
+    }
+    .nav-item{
+        margin-left:35px;
+        font-weight:600;
+    }
+    #navbar-item:hover{
+        color: darkblue;
+    }
+    #nav2img1{
+        width:150px;
+    }
+    #nav2img2{
+        width:150px;
+    }
+}
+@media  screen and (min-width:1100px ) and (max-width:1355px)
+{
+    #navbar2img{
+        width:200px;
+    }
+    #navbarSupportedContent{
+        font-size: 18px;
+    }
+    .nav-item{
+        margin-left:35px;
+        font-weight:600;
+    }
+    #navbar-item:hover{
+        color: darkblue;
+    }
+    #nav2img1{
+        width:150px;
+    }
+    #nav2img2{
+        width:150px;
+    }
+}
+@media  screen and (min-width:1355px ) and (max-width:1500px)
+{
+    #navbar2img{
+        width:200px;
+    }
+    #navbarSupportedContent{
+        font-size: 20px;
+    }
+    .nav-item{
+        margin-left:65px;
+        font-weight:600;
+    }
+    #navbar-item:hover{
+        color: darkblue;
+    }
+    #nav2img1{
+        width:150px;
+    }
+    #nav2img2{
+        width:150px;
+    }
+}
