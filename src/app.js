@@ -16,6 +16,10 @@ app.get('/',(req,res)=>{
     res.render('index');
 })
 
+app.get('/index.ejs',(req,res)=>{
+    res.render('index');
+})
+
 app.get('/templates/why.ejs',(req,res)=>{
     res.render('why');
 })
