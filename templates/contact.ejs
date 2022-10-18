@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novawaterpure</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/whystyle.css">
-    <!--bootstrap css-->
+    <link rel="stylesheet" href="../style/contactstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
@@ -38,7 +37,6 @@
     <meta property="og:image" content=""/>
     <link rel="icon" type="image/x-icon" href="../images/Nova Logo1.1 – 3 (Transparent).png">
 
-
 </head>
 <body onload="mainfunc()">
     <!--header-->
@@ -56,38 +54,38 @@
     </div>
     <!--navbar-->
     <div class="top" id="hamburger">
-			<a href="../index.html"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="mobnav2img1"></a>
-      <a href="../index.html"><img src="../images/DURACON LOGO.png" id="mobnav2img2"></a>
+			<a href="../index.ejs"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="mobnav2img1"></a>
+      <a href="../index.ejs"><img src="../images/DURACON LOGO.png" id="mobnav2img2"></a>
       <a href="#" class="menu_icon"><i class="material-icons" id="icon">dehaze</i></a>
 		</div>
         <nav class="menu">
             <a class="item_menu"><span id="cross">❌</span></a>
-        <br><br><a href="../index.html" class="item_menu">Home</a>
-		<a href="../templates/about.html" class="item_menu">Company Profile</a>
-		<a href="../templates/why.html" class="item_menu">Why Novapure</a>
-		<a href="../templates/ss.html" class="item_menu">Stainless Steel Tanks</a>
-		<a href="../templates/plastictanks.html" class="item_menu">Plastic Tanks</a>
-		<a href="../templates/lofttanks.html" class="item_menu">Loft Tanks</a>
-        <a href="../templates/download.html" class="item_menu">Download</a>
-        <a href="../templates/faq.html" class="item_menu">FAQ</a>
-        <a href="../templates/contact.html" class="item_menu">Contact Us</a>
+        <br><br><a href="../index.ejs" class="item_menu">Home</a>
+		<a href="../templates/about.ejs" class="item_menu">Company Profile</a>
+		<a href="../templates/why.ejs" class="item_menu">Why Novapure</a>
+		<a href="../templates/ss.ejs" class="item_menu">Stainless Steel Tanks</a>
+		<a href="../templates/plastictanks.ejs" class="item_menu">Plastic Tanks</a>
+		<a href="../templates/lofttanks.ejs" class="item_menu">Loft Tanks</a>
+        <a href="../templates/download.ejs" class="item_menu">Download</a>
+        <a href="../templates/faq.ejs" class="item_menu">FAQ</a>
+        <a href="../templates/contact.ejs" class="item_menu">Contact Us</a>
         </nav>
     <nav class="navbar navbar-expand-lg" id="navbar2">
         <div class="container-fluid">
-          <a href="../index.html"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="nav2img1"></a>
-          <a href="../index.html"><img src="../images/DURACON LOGO.png" id="nav2img2"></a>
+          <a href="../index.ejs"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="nav2img1"></a>
+          <a href="../index.ejs"><img src="../images/DURACON LOGO.png" id="nav2img2"></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html" style="color: blue;" id="navbar-item">Home</a>
+                <a class="nav-link" href="../index.ejs" style="color: blue;" id="navbar-item">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbar-item">
                   About Us
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../templates/about.html" id="navbar-item">Company Profile</a></li>
-                  <li><a class="dropdown-item" href="../templates/why.html" id="navbar-item">Why Novapure</a></li>
+                  <li><a class="dropdown-item" href="../templates/about.ejs" id="navbar-item">Company Profile</a></li>
+                  <li><a class="dropdown-item" href="../templates/why.ejs" id="navbar-item">Why Novapure</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -95,35 +93,84 @@
                   Products
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../templates/ss.html" id="navbar-item">Stainless Steel(SS) Tanks</a></li>
-                  <li><a class="dropdown-item" href="../templates/plastictanks.html" id="navbar-item">Plastic Tanks</a></li>
-                  <li><a class="dropdown-item" href="../templates/lofttanks.html" id="navbar-item">Loft Tanks</a></li>
+                  <li><a class="dropdown-item" href="../templates/ss.ejs" id="navbar-item">Stainless Steel(SS) Tanks</a></li>
+                  <li><a class="dropdown-item" href="../templates/plastictanks.ejs" id="navbar-item">Plastic Tanks</a></li>
+                  <li><a class="dropdown-item" href="../templates/lofttanks.ejs" id="navbar-item">Loft Tanks</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../templates/download.html" id="navbar-item">Download</a>
+                <a class="nav-link" href="../templates/download.ejs" id="navbar-item">Download</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../templates/faq.html" id="navbar-item">FAQ</a>
+                <a class="nav-link" href="../templates/faq.ejs" id="navbar-item">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../templates/contact.html" id="navbar-item">Contact</a>
+                <a class="nav-link" href="../templates/contact.ejs" id="navbar-item">Contact</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
+
     <a href="https://api.whatsapp.com/send/?phone=919701169701&text&type=phone_number&app_absent=0"><img src="../images/headerimg/whatsapp-icon.jpg" id="staticimg"></a>
-    <!--why Novapure-->
-    <div class="why">
-        <div class="content">
-            <h3 id="whyhead">Why Us</h3>
-            <p>Every living thing consists of water. The human body consists of 65% water. If the body loses more than 20% of its normal water content, the person will die painfully. A human being must take in a minimum of 4 litres of potable quality of water per day in order to carry on the life process. Whatever the nutrients (food substances) a person takes in, it is the water that dissolves them and carries them to all parts of organism, which through bio chemical reactions are converted to energy.</p>
-            <p>The 1981 report of World Health Organization, Geneva reports "Water collected for domestic use often becomes recontaminated or further contaminated by unsafe consumer storage and handling practices at the household level and is at the high risk by various pathogenic viruses, bacteria and parasites causing infectious diseases."</p>
-            <p>Therefore household safe storage can lead to dramatic improvements in drinking water quality and reduction in diarrheal disease. Assurance of drinking-water safety is a foundation for the prevention and control of waterborne diseases.</p>
-            <p>Water can affect people's health via food preparation, direct human use for drinking or for hygiene.</p>
+    <!--contact us
+    <div class="contactus">
+        <div class="contactusform">
+            <h2 id="sendusmsg">Send Us a Message</h2>
+            <form action="action_page.php">
+                <input type="text" id="fname" name="firstname" placeholder="Full Name">
+                <input type="email" id="email" name="useremail" placeholder="Email">
+                <input type="number" id="number" name="phonenumber" placeholder="Phone Number">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
         </div>
-        <img src="../images/ssimg/1000_NEER_SS_TANK.png" class="whyimg">
+        <div class="address">
+            <h2 id="addresshead">Reach Us At</h2>
+            <div class="location">
+                <img src="../images/contactimg/img1.jfif" class="contactimg">
+                <p id="locationcontent">V.V Industries ,Plot No.A - 28/1/15,
+                    I.D.A Nacharam,Road No 15(Straight Dead End), Opposite New GVK BIO Campus,Hyderabad,
+                    T.S-500 076,India.</p>
+            </div>
+            <div class="call">
+                <img src="../images/contactimg/img2.jpg" class="contactimg">
+                <p id="callcontent">(040) 27170332<br>
+                    27159702,27159703</p>
+            </div>
+            <div class="email">
+                <img src="../images/contactimg/img3.jfif" class="contactimg">
+                <p id="emailcontent">novawaterpure@gmail.com</p>
+            </div>
+        </div>
+    </div>-->
+    <!--get In Touch-->
+    <div class="contact">
+      <div class="left">
+        <h1 id="lefthead">Contact Us</h1>
+        <p id="leftcontent">Amarwood Industries Pvt Ltd, Hyderabad is the pioneer in manufacture of Stainless Steel Water Tanks (304/316 grade). We manufacture Water Tanks from sizes 30 to 8000 liters using high end seam welding technology which incorporates fusion of two metals without the use of any foreign filler material thus ensuring rust proof welding for lifetime.We have our own deep drawing press of capacity 1200 Tones for deep drawing of the dish ends(Tank Top and Bottom Dishes).</p>
+        <a href="#"><img src="../images/whatsapp-button.png" id="whatsappbtnimg"></a>
+      </div>
+      <div class="right">
+        <!-- <img src="../images/ssimg/img2.jpg" id="rightimg"> -->
+        <div class="rightcontent">
+          <div class="location">
+            <img src="../images/contactimg/img1.jfif" class="contactimg">
+            <p id="location">V.V Industries ,Plot No.A - 28/1/15,
+              I.D.A Nacharam,Road No 15(Straight Dead End), Opposite New GVK BIO Campus,Hyderabad,
+              T.S-500 076,India.</p>
+          </div>
+          <div class="call">
+            <img src="../images/contactimg/img2.jpg" class="contactimg">
+            <p id="callcontent">(040) 27170332<br>
+                27159702,27159703</p>
+        </div>
+        <div class="email">
+            <img src="../images/contactimg/img3.jfif" class="contactimg">
+            <p id="emailcontent">novawaterpure@gmail.com</p>
+        </div>
+        </div>
+      </div>
     </div>
     <!--footer-->
     <div class="footer">
@@ -147,7 +194,7 @@
             <div class="footercontact">
               <h3 id="footerhead">Amarwood Industries Pvt Ltd</h3>
               <h5 id="footeremail">novawaterpure@gmail.com</h5>
-              <h5 id="footernumber">(+91) 9701169701, 9394607035</h5>
+              <h5 id="footernumber">(+91) 9701169701, 9849080798</h5>
               <h5 id="footernumber">040-27170332, 27159702 / 03</h5>
               <div class="navbar-logos">
                 <a href="https://www.facebook.com/amarwoodindustries/"><img src="../images/headerimg/img1.png" class="headerimg"></a>

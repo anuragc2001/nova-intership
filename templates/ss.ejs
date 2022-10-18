@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novawaterpure</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/plastictanksstyle.css">
+    <link rel="stylesheet" href="../style/ssstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
@@ -37,6 +37,7 @@
     <meta property="og:image" content=""/>
     <link rel="icon" type="image/x-icon" href="../images/Nova Logo1.1 – 3 (Transparent).png">
 
+
 </head>
 <body onload="mainfunc()">
     <!--header-->
@@ -54,38 +55,38 @@
     </div>
     <!--navbar-->
     <div class="top" id="hamburger">
-			<a href="../index.html"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="mobnav2img1"></a>
-      <a href="../index.html"><img src="../images/DURACON LOGO.png" id="mobnav2img2"></a>
+			<a href="../index.ejs"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="mobnav2img1"></a>
+      <a href="../index.ejs"><img src="../images/DURACON LOGO.png" id="mobnav2img2"></a>
       <a href="#" class="menu_icon"><i class="material-icons" id="icon">dehaze</i></a>
 		</div>
         <nav class="menu">
             <a class="item_menu"><span id="cross">❌</span></a>
-        <br><br><a href="../index.html" class="item_menu">Home</a>
-		<a href="../templates/about.html" class="item_menu">Company Profile</a>
-		<a href="../templates/why.html" class="item_menu">Why Novapure</a>
-		<a href="../templates/ss.html" class="item_menu">Stainless Steel Tanks</a>
-		<a href="../templates/plastictanks.html" class="item_menu">Plastic Tanks</a>
-		<a href="../templates/lofttanks.html" class="item_menu">Loft Tanks</a>
-        <a href="../templates/download.html" class="item_menu">Download</a>
-        <a href="../templates/faq.html" class="item_menu">FAQ</a>
-        <a href="../templates/contact.html" class="item_menu">Contact Us</a>
+        <br><br><a href="../index.ejs" class="item_menu">Home</a>
+		<a href="../templates/about.ejs" class="item_menu">Company Profile</a>
+		<a href="../templates/why.ejs" class="item_menu">Why Novapure</a>
+		<a href="../templates/ss.ejs" class="item_menu">Stainless Steel Tanks</a>
+		<a href="../templates/plastictanks.ejs" class="item_menu">Plastic Tanks</a>
+		<a href="../templates/lofttanks.ejs" class="item_menu">Loft Tanks</a>
+        <a href="../templates/download.ejs" class="item_menu">Download</a>
+        <a href="../templates/faq.ejs" class="item_menu">FAQ</a>
+        <a href="../templates/contact.ejs" class="item_menu">Contact Us</a>
         </nav>
     <nav class="navbar navbar-expand-lg" id="navbar2">
         <div class="container-fluid">
-          <a href="../index.html"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="nav2img1"></a>
-          <a href="../index.html"><img src="../images/DURACON LOGO.png" id="nav2img2"></a>
+          <a href="../index.ejs"><img src="../images/Nova Logo1.1 – 3 (Transparent).png" id="nav2img1"></a>
+          <a href="../index.ejs"><img src="../images/DURACON LOGO.png" id="nav2img2"></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html" style="color: blue;" id="navbar-item">Home</a>
+                <a class="nav-link" href="../index.ejs" style="color: blue;" id="navbar-item">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbar-item">
                   About Us
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../templates/about.html" id="navbar-item">Company Profile</a></li>
-                  <li><a class="dropdown-item" href="../templates/why.html" id="navbar-item">Why Novapure</a></li>
+                  <li><a class="dropdown-item" href="../templates/about.ejs" id="navbar-item">Company Profile</a></li>
+                  <li><a class="dropdown-item" href="../templates/why.ejs" id="navbar-item">Why Novapure</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -93,32 +94,31 @@
                   Products
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../templates/ss.html" id="navbar-item">Stainless Steel(SS) Tanks</a></li>
-                  <li><a class="dropdown-item" href="../templates/plastictanks.html" id="navbar-item">Plastic Tanks</a></li>
-                  <li><a class="dropdown-item" href="../templates/lofttanks.html" id="navbar-item">Loft Tanks</a></li>
+                  <li><a class="dropdown-item" href="../templates/ss.ejs" id="navbar-item">Stainless Steel(SS) Tanks</a></li>
+                  <li><a class="dropdown-item" href="../templates/plastictanks.ejs" id="navbar-item">Plastic Tanks</a></li>
+                  <li><a class="dropdown-item" href="../templates/lofttanks.ejs" id="navbar-item">Loft Tanks</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../templates/download.html" id="navbar-item">Download</a>
+                <a class="nav-link" href="../templates/download.ejs" id="navbar-item">Download</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../templates/faq.html" id="navbar-item">FAQ</a>
+                <a class="nav-link" href="../templates/faq.ejs" id="navbar-item">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../templates/contact.html" id="navbar-item">Contact</a>
+                <a class="nav-link" href="../templates/contact.ejs" id="navbar-item">Contact</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-
     <a href="https://api.whatsapp.com/send/?phone=919701169701&text&type=phone_number&app_absent=0"><img src="../images/headerimg/whatsapp-icon.jpg" id="staticimg"></a>
     <!--about section-->
     <div class="abtsection">
         <div class="content">
-            <h3 class="abthead">Duracon Plastic Tanks</h3>
-            <p class="abtcontent">V.V Industries , Hyderabad, is the pioneer in manufacturing Plastic water tanks (Food Grade Version Material). We Provide food grade certificate for all our plastic tanks. We’ve been manufacturing the best quality plastic water tanks for the last 32 years and we can proudly say that our customers are hydrated safely. We manufacture Water Tanks from sizes 200 to 5000 liters.</p>
-            <!-- <ul class="abtlist">
+            <h3 class="abthead">Nova Steel Tanks</h3>
+            <p class="abtcontent">Amar Wood Industries Pvt Ltd, Hyderabad, is the pioneer in manufacturing Stainless Steel Water Tanks (304/316 grade). We’ve been manufacturing the best quality Stainless steel water tanks for the last 15 years and we can proudly say that our customers are hydrated safely. We manufacture Water Tanks from sizes 30 to 7500 liters using Seam Welding Technology which incorporates a fusion of two metals without the use of any foreign filler material thus ensuring rust-proof welding for a lifetime. Stainless steel tanks have been the go-to tanks for various companies and individuals. Here is why:</p>
+            <ul class="abtlist">
                 <li>Steel is very durable. It is always in excellent condition even after decades of use.</li>
                 <li>It is completely resistant to extreme temperatures.</li>
                 <li>It completely avoids the risk of the growth of bio-mass</li>
@@ -127,244 +127,213 @@
                 <li>It is risk-free in terms of any chances of a chemical reaction. Therefore, no risk of contamination.</li>
                 <li>Our tanks do not require frequent cleaning or regular maintenance. They also come with a longer shelf life.</li>
                 <li>When water is stagnant in a Stainless Steel tank, it doesn't allow the formation of scale. This helps in maintaining smooth water flow in the entire house.</li>
-            </ul> -->
+            </ul>
         </div>
+        <iframe id="processvid" src="https://www.youtube.com/embed/xTUCmyJHl3k"></iframe>
     </div>
     <!--types section-->
     <div class="type">
-      <h3 class="typehead">Types and Quantity</h3>
-      <!-- <p class="typecontent">304 - Food grade - Drinking water<br>
+      <h3 class="typehead">Types and Ranges</h3>
+      <p class="typecontent">304 - Food grade - Drinking water<br>
           Neer: 0.4 | Used for Commercial purpose<br>
           Nova : 0.6 | Used for Residential purpose<br><br>
           316 - Special grade - For bore water<br>
-          Nova | Used for residential purpose</p> -->
+          Nova | Used for residential purpose</p>
           <div class="typegrid">
-            <!-- <div class="griditem one">
-              <img src="../images/plasticimg/300" class="gridimg">
-              <h2 class="gridcontent">300 ltrs</h2>
-              <div class="two">
-                <p>Diameter - 2.75 ft</p>
-                <p>Height - 3.5 ft</p>
-                <p>Capacity - 300 ltrs</p>
+              <!-- <div class="griditem">
+                  <img src="../images/ssimg/nova.png" class="gridimg">
+                  <h2 class="gridcontent">7500 liters</h2>
+                  <div class="hidden">
+                    <h6>Diameter - </h6>
+                    <h6>Thickness - </h6>
+                    <h6>Height - </h6>
+                    <h6>Capacity - </h6>
+                    <h6>Stand material - </h6>
+                  </div>
+              </div> -->
+              <div class="griditem one">
+                  <img src="../images/ssimg/30L White.png" class="gridimg">
+                  <h2 class="gridcontent">30 ltrs</h2>
+                  <div class="two">
+                    <p>Diameter - 1.25 ft</p>
+            <p>Thickness - 0.6 mm</p>
+            <p>Height - 2 ft</p>
+            <p>Capacity - 30 ltrs</p>
+                  </div>
               </div>
-          </div> -->
+              <!-- <div class="griditem one">
+                <img src="../images/ssimg/nova.png" class="gridimg">
+                <h2 class="gridcontent">100 ltrs</h2>
+                <div class="two">
+                  <p>Diameter - 2 ft</p>
+                  <p>Thickness - 0.5</p>
+                  <p>Height - 2.75 ft</p>
+                  <p>Capacity - 100 ltrs</p>
+                  <p>Stand material - Hot Dipped GI</p>
+                </div>
+            </div> -->
+            <div class="griditem one">
+              <img src="../images/ssimg/200 Ltrs White.png" class="gridimg">
+              <h2 class="gridcontent">200 ltrs</h2>
+              <div class="two">
+                <p>Diameter - 2.5 ft</p>
+                <p>Thickness - 0.6 mm</p>
+                <p>Height - 3 ft</p>
+                <p>Capacity - 200 ltrs</p>
+                <p>Stand material -  MS Painted Rod</p>
+              </div>
+          </div>
+              <!-- <div class="griditem three">
+                  <img src="../images/ssimg/nova.png" class="gridimg four">
+                  <h2 class="gridcontent five">3000 ltrs</h2>
+                  <div class="six">
+                    <h4>Diameter - </h6>
+                    <h4>Thickness - </h6>
+                    <h4>Height - </h6>
+                    <h4>Capacity - </h6>
+                    <h4>Stand material - </h6>
+                  </div>
+              </div> -->
+              <div class="griditem one">
+                <img src="../images/ssimg/300 Ltrs White.png" class="gridimg">
+                <h2 class="gridcontent">300 ltrs</h2>
+                <div class="two">
+                  <p>Diameter - 2.5 ft</p>
+                  <p>Thickness - 0.6 mm</p>
+                  <p>Height - 3.75 ft</p>
+                  <p>Capacity - 300 ltrs</p>
+                  <p>Stand material - MS Painted Rod</p>
+                </div>
+            </div>
+            <div class="griditem one">
+              <img src="../images/ssimg/500 ltrs.jpg" class="gridimg">
+              <h2 class="gridcontent">500 ltrs</h2>
+              <div class="two">
+                <p>Diameter - 3.5 ft</p>
+                <p>Thickness - 0.6 mm</p>
+                <p>Height - 3.5 ft</p>
+                <p>Capacity - 500 ltrs</p>
+                <p>Stand material - Hot Dipped GI</p>
+              </div>
+          </div>
           <div class="griditem one">
-            <img src="../images/plasticimg/500L Duracon White.png" class="gridimg">
-            <h2 class="gridcontent">500 ltrs</h2>
+            <img src="../images/ssimg/1000 L White.png" class="gridimg">
+            <h2 class="gridcontent">1000 ltrs</h2>
             <div class="two">
-              <p>Diameter - 2.75 ft</p>
-              <p>Height - 3.5 ft</p>
-              <p>Capacity - 500 ltrs</p>
-              <p>Available upto 6 layers</p>
+              <p>Diameter - 3.5 ft</p>
+              <p>Thickness - 0.6 mm</p>
+              <p>Height - 6.5 ft</p>
+              <p>Capacity - 1000 ltrs</p>
+              <p>Stand material - Hot Dipped GI</p>
             </div>
         </div>
         <div class="griditem one">
-          <img src="../images/plasticimg/750L Duracon Black.png" class="gridimg">
-          <h2 class="gridcontent">750 ltrs</h2>
+          <img src="../images/ssimg/2000 L White.png" class="gridimg">
+          <h2 class="gridcontent">2000 ltrs</h2>
           <div class="two">
-            <p>Diameter - 3.25 ft</p>
-            <p>Height - 4 ft</p>
-            <p>Capacity - 750 ltrs</p>
-            <p>Available upto 6 layers</p>
+            <p>Diameter - 5 ft</p>
+            <p>Thickness - 0.6 mm</p>
+            <p>Height - 6.5 ft</p>
+            <p>Capacity - 2000 ltrs</p>
+            <p>Stand material - Hot Dipped GI</p>
           </div>
       </div>
       <div class="griditem one">
-        <img src="../images/plasticimg/1000L Duracon Black.png" class="gridimg">
-        <h2 class="gridcontent">1000 ltrs</h2>
+        <img src="../images/ssimg/3000 L White.png" class="gridimg">
+        <h2 class="gridcontent">3000 ltrs</h2>
         <div class="two">
-          <p>Diameter - 3.5 ft</p>
-          <p>Height - 4.25 ft</p>
-          <p>Capacity - 1000 ltrs</p>
-          <p>Available upto 6 layers</p>
+          <p>Diameter - 5 ft</p>
+          <p>Thickness - 0.6 mm</p>
+          <p>Height - 7.5 ft</p>
+          <p>Capacity - 3000 ltrs</p>
+          <p>Stand material - Hot Dipped GI</p>
         </div>
     </div>
-    <div class="griditem one">
-      <img src="../images/plasticimg/1500L Duracon Black.png" class="gridimg">
-      <h2 class="gridcontent">1500 ltrs</h2>
+    <!-- <div class="griditem one">
+      <img src="../images/ssimg/nova.png" class="gridimg">
+      <h2 class="gridcontent">5000 ltrs</h2>
       <div class="two">
-        <p>Diameter - 4.25 ft</p>
-        <p>Height - 4.25 ft</p>
-        <p>Capacity - 1500 ltrs</p>
-        <p>Available upto 6 layers</p>
+        <p>Diameter - 5.5 ft</p>
+        <p>Thickness - 1</p>
+        <p>Height - 8 ft</p>
+        <p>Capacity - 5000 ltrs</p>
+        <p>Stand material - Hot Dipped GI</p>
       </div>
-  </div>
+  </div> -->
   <div class="griditem one">
-    <img src="../images/plasticimg/2000L Duracon Black.png" class="gridimg">
-    <h2 class="gridcontent">2000 ltrs</h2>
+    <img src="../images/ssimg/7500 L White.png" class="gridimg">
+    <h2 class="gridcontent">7500 ltrs</h2>
     <div class="two">
-      <p>Diameter - 4.75 ft</p>
-      <p>Height - 4.75 ft</p>
-      <p>Capacity - 2000 ltrs</p>
-      <p>Available upto 6 layers</p>
+      <p>Diameter - 5.5 ft</p>
+      <p>Thickness - 1 mm</p>
+      <p>Height - 14 ft</p>
+      <p>Capacity - 7500 ltrs</p>
+      <p>Stand material - Hot Dipped GI</p>
     </div>
 </div>
-<div class="griditem one">
-  <img src="../images/plasticimg/3000L Duracon Black.png" class="gridimg">
-  <h2 class="gridcontent">3000 ltrs</h2>
-  <div class="two">
-    <p>Diameter - 5 ft</p>
-    <p>Height - 6 ft</p>
-    <p>Capacity - 3000 ltrs</p>
-    <p>Available upto 6 layers</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/plasticimg/5000L Duracon Black.png" class="gridimg">
-  <h2 class="gridcontent">5000 ltrs</h2>
-  <div class="two">
-    <p>Diameter - 6.25 ft</p>
-    <p>Height - 6 ft</p>
-    <p>Capacity - 5000 ltrs</p>
-    <p>Available upto 6 layers</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/plasticimg/500L Classic Black.png" class="gridimg">
+<!-- <div class="griditem one">
+  <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">500 ltrs</h2>
   <div class="two">
-    <p>Diameter - 2.75 ft</p>
-    <p>Height - 3.5 ft</p>
+    <p>Diameter - 2.5 ft</p>
+    <p>Thickness - 0.4</p>
+    <p>Height - 6.5 ft</p>
     <p>Capacity - 500 ltrs</p>
-    <p>Available upto 4 layers</p>
+    <p>Stand material - MS Painted</p>
   </div>
 </div>
 <div class="griditem one">
-  <img src="../images/plasticimg/750L Classic Black.png" class="gridimg">
-  <h2 class="gridcontent">750 ltrs</h2>
-  <div class="two">
-    <p>Diameter - 3.25 ft</p>
-    <p>Height - 4 ft</p>
-    <p>Capacity - 750 ltrs</p>
-    <p>Available upto 4 layers</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/plasticimg/1000L Classic Black.png" class="gridimg">
+  <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">1000 ltrs</h2>
   <div class="two">
     <p>Diameter - 3.5 ft</p>
-    <p>Height - 4.25 ft</p>
+    <p>Thickness - 0.4</p>
+    <p>Height - 6.5 ft</p>
     <p>Capacity - 1000 ltrs</p>
-    <p>Available upto 4 layers</p>
+    <p>Stand material - MS Painted</p>
   </div>
 </div>
 <div class="griditem one">
-  <img src="../images/plasticimg/1500L Classic Black.png" class="gridimg">
-  <h2 class="gridcontent">1500 ltrs</h2>
-  <div class="two">
-    <p>Diameter - 4.25 ft</p>
-    <p>Height - 4.25 ft</p>
-    <p>Capacity - 1500 ltrs</p>
-    <p>Available upto 4 layers</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/plasticimg/2000L Classic Black.png" class="gridimg">
+  <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">2000 ltrs</h2>
   <div class="two">
-    <p>Diameter - 4.75 ft</p>
-    <p>Height - 4.75 ft</p>
+    <p>Diameter - 5 ft</p>
+    <p>Thickness - 0.5</p>
+    <p>Height - 6.5 ft</p>
     <p>Capacity - 2000 ltrs</p>
-    <p>Available upto 4 layers</p>
+    <p>Stand material - MS Painted</p>
   </div>
 </div>
 <div class="griditem one">
-  <img src="../images/plasticimg/3000L Classic Black.png" class="gridimg">
+  <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">3000 ltrs</h2>
   <div class="two">
     <p>Diameter - 5 ft</p>
-    <p>Height - 6 ft</p>
+    <p>Thickness - 0.5</p>
+    <p>Height - 7.5 ft</p>
     <p>Capacity - 3000 ltrs</p>
-    <p>Available upto 4 layers</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/plasticimg/5000L Classic Black.png" class="gridimg">
-  <h2 class="gridcontent">5000 ltrs</h2>
-  <div class="two">
-    <p>Diameter - 6.25 ft</p>
-    <p>Height - 6 ft</p>
-    <p>Capacity - 5000 ltrs</p>
-    <p>Available upto 4 layers</p>
-  </div>
-</div>
-<!-- <div class="griditem one">
-  <img src="../images/plasticimg/2" class="gridimg">
-  <h2 class="gridcontent">200 ltrs</h2>
-  <div class="two">
-    <p>Length - 2.5 ft</p>
-    <p>Width - 2.5 ft</p>
-    <p>Height - 1.5 ft</p>
-    <p>Capacity - 200 ltrs</p>
-  </div>
-</div> -->
-<!-- <div class="griditem one">
-  <img src="../images/plasticimg/300L Loft Duracon White.png" class="gridimg">
-  <h2 class="gridcontent">300 ltrs</h2>
-  <div class="two">
-    <p>Length - 3.5 ft</p>
-    <p>Width - 2.5 ft</p>
-    <p>Height - 1.5 ft</p>
-    <p>Capacity - 300 ltrs</p>
-  </div>
-</div> -->
-<!-- <div class="griditem one">
-  <img src="../images/plasticimg/40" class="gridimg">
-  <h2 class="gridcontent">400 ltrs</h2>
-  <div class="two">
-    <p>Length - 4.5 ft</p>
-    <p>Width - 2.5 ft</p>
-    <p>Height - 1.5 ft</p>
-    <p>Capacity - 400 ltrs</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/plasticimg/500" class="gridimg">
-  <h2 class="gridcontent">500 ltrs</h2>
-  <div class="two">
-    <p>Length - 5.25 ft</p>
-    <p>Width - 2.75 ft</p>
-    <p>Height - 1.5 ft</p>
-    <p>Capacity - 500 ltrs</p>
+    <p>Stand material - MS Painted</p>
   </div>
 </div>
 <div class="griditem one">
   <img src="../images/ssimg/nova.png" class="gridimg">
-  <h2 class="gridcontent">750 ltrs</h2>
+  <h2 class="gridcontent">250 ltrs</h2>
   <div class="two">
-    <p>Length - 5.25 ft</p>
-    <p>Width - 2.75 ft</p>
-    <p>Height - 1.5 ft</p>
-    <p>Capacity - 500 ltrs</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/ssimg/nova.png" class="gridimg">
-  <h2 class="gridcontent">1000 ltrs</h2>
-  <div class="two">
-    <p>Length - 5 ft</p>
-    <p>Width - 4.5 ft</p>
-    <p>Height - 2 ft</p>
-    <p>Capacity - 1000 ltrs</p>
-  </div>
-</div>
-<div class="griditem one">
-  <img src="../images/ssimg/nova.png" class="gridimg">
-  <h2 class="gridcontent">200 ltrs</h2>
-  <div class="two">
-    <p>Length - 2.5 ft</p>
-    <p>Width - 2.5 ft</p>
-    <p>Height - 1.5 ft</p>
-    <p>Capacity - 200 ltrs</p>
+    <p>Length - 38"</p>
+    <p>Width - 27"</p>
+    <p>Height - 14"</p>
+    <p>Thickness - 0.6</p>
+    <p>Capacity - 250 ltrs</p>
   </div>
 </div>
 <div class="griditem one">
   <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">300 ltrs</h2>
   <div class="two">
-    <p>Length - 3.5 ft</p>
-    <p>Width - 2.5 ft</p>
-    <p>Height - 1.5 ft</p>
+    <p>Length - 38"</p>
+    <p>Width - 27"</p>
+    <p>Height - 19"</p>
+    <p>Thickness - 0.6</p>
     <p>Capacity - 300 ltrs</p>
   </div>
 </div>
@@ -372,9 +341,10 @@
   <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">400 ltrs</h2>
   <div class="two">
-    <p>Length - 4.5 ft</p>
-    <p>Width - 2.5 ft</p>
-    <p>Height - 1.5 ft</p>
+    <p>Length - 38"</p>
+    <p>Width - 27"</p>
+    <p>Height - 24"</p>
+    <p>Thickness - 0.6</p>
     <p>Capacity - 400 ltrs</p>
   </div>
 </div>
@@ -382,26 +352,27 @@
   <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">500 ltrs</h2>
   <div class="two">
-    <p>Length - 5.25 ft</p>
-    <p>Width - 2.75 ft</p>
-    <p>Height - 1.5 ft</p>
+    <p>Length - 38"</p>
+    <p>Width - 27"</p>
+    <p>Height - 30"</p>
+    <p>Thickness - 0.6</p>
     <p>Capacity - 500 ltrs</p>
   </div>
 </div> -->
-          </div>
+      </div>
   </div>
     <!--purchase-->
     <div class="purchase">
         <h3 id="purchasehead">Purchase</h3>
-        <p id="purchasecontent">We offer the most hassle-free process. Just give us a call or send a message and we’ll get your requirement delivered at the earliest. If you like to visit us we’d love to have you at our factory.</p>
+        <p id="purchasecontent">We offer the most hassle-free process. Just give us a call or send a message and we'll get your requirement delivered at the earliest. If you like to visit us we’d love to have you at our factory.</p>
         <div class="purchaseflex">
             <div class="flex">
                 <img src="../images/contactimg/img2.jpg" class="purchaseimg">
-                <h6 class="purchasecon">+91 9701169701</h6>
+                <h6 class="purchasecon">+91 9849080798</h6>
             </div>
             <div class="flex">
                 <img src="../images/contactimg/img2.jpg" class="purchaseimg">
-                <h6 class="purchasecon">+91 9849080798</h6>
+                <h6 class="purchasecon">+91 9701169701</h6>
             </div>
             <div class="flex">
                 <img src="../images/contactimg/img3.jfif" class="purchaseimg">
@@ -424,8 +395,8 @@
             </div>
             <div id="footerproducts">
               <h4 class="fphead">OUR PRODUCTS</h4>
-              <p class="fp1">Plastic Tanks<br>200-5000L</p>
-              <p class="fp2">Stainless Steel Tanks<br>30-7500L</p>
+              <p class="fp1"><a href="../templates/plastictanks.ejs">Plastic Tanks</a><br>200-5000L</p>
+              <p class="fp2"><a href="../templates/ss.ejs"></a>Stainless Steel Tanks<br>30-7500L</p>
               <img src="../images/footer.jpg" id="fpimg">
             </div>
             <div class="footercontact">
