@@ -18,6 +18,7 @@ const {why} = require('./controllers/why.controller');
 
 
 app.set('view engine', 'ejs')
+app.set(app.set('views', path.join(__dirname, '/views/templates/')));
 app.use(express.static(path.join(__dirname, '/../public')))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
