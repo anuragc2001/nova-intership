@@ -7,5 +7,5 @@ const plastictanks = (req, res, next) => {
 
 
 module.exports = {
-    plastictanks 
+    plastictanks
 }
