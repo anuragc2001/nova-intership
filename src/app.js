@@ -2,7 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const path = require('path')
 
-const port = process.env.PORT || 3000
+
+const port = process.env.PORT || 3000;
 
 
 const app = express();
@@ -11,6 +12,9 @@ app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, '/../public')))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+
+
+
 
 app.get('/',(req,res)=>{
     res.render('index');
@@ -31,6 +35,7 @@ app.get('/templates/about.ejs',(req,res)=>{
 app.get('/templates/contact.ejs',(req,res)=>{
     res.render('contact');
 })
+
 
 app.get('/templates/download.ejs',(req,res)=>{
     res.render('download');
