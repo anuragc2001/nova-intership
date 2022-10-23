@@ -3,28 +3,31 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-
 let stainlessSteelTank = new Schema({
 
-
     category :{
-        type: String
+      type: String,
+      required: false,
     },
     diameter: {
-      type: Number
+      type: Number,
+      required: true,
     },
     thickness: {
-      type: Number
+      type: Number,
+      required: true,
     },
     height: {
-      type: Number
+      type: Number,
+      required: true,
     },
     capacity: {
-        type: Number
-      },
-
+        type: Number,
+        required: true,
+    },
     standMaterial: {
-    type: String
+        type: String,
+        required: true,
     },
 
   });
@@ -32,47 +35,56 @@ let stainlessSteelTank = new Schema({
 let plasticTank = new Schema({
 
     category :{
-        type: String
+        type: String,
+        required: false,
     },
-
     diameter: {
-        type: Number
-      },
+        type: Number,
+        required: true,
+    },
     height: {
-    type: Number
+        type: Number,
+        required: true,
     },
     capacity: {
-        type: Number
+        type: Number,
+        required: true,
     },
     layer: {
-        type: Number
+        type: Number,
+        required: true,
     },
   });
-  let loftTank = new Schema({
-    category :{
-        type: String
-    },
 
+let loftTank = new Schema({
+    category :{
+        type: String,
+        required: false,
+    },
     length: {
-      type: Number
+        type: Number,
+        required: true,
     },
     width: {
-      type: Number
+        type: Number,
+        required: true,
     },
     height: {
-        type: Number
+        type: Number,
+        required: true,
     },
     thickness: {
-    type: Number
+        type: Number,
+        required: true,
     },
     capacity: {
-    type: Number
+      type: Number,
+      required: true,
     },
-
     standMaterial: {
-    type: String
+      type: String,
+      required: true,
     },
-
   });
 
 
