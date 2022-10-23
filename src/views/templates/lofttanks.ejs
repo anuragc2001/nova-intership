@@ -158,18 +158,20 @@
                 <p>Capacity - 300 ltrs</p>
               </div>
           </div> -->
-          <div class="griditem one">
-            <img src="../images/loftimg/200L Loft White.png" class="gridimg">
-            <h2 class="gridcontent">250 ltrs</h2>
-            <div class="two">
-              <p>Length - 38"</p>
-              <p>Width - 27"</p>
-              <p>Height - 14"</p>
-              <p>Thickness - 0.6</p>
-              <p>Capacity - 250 ltrs</p>
+          <%l_data.forEach((tank) => {%>
+            <div class="griditem one">
+              <img src="../images/loftimg/200L Loft White.png" class="gridimg">
+              <h2 class="gridcontent"><%=tank.capacity%> ltrs</h2>
+              <div class="two">
+                <p>Length - <%=tank.length%>"</p>
+                <p>Width - <%=tank.width%>"</p>
+                <p>Height - <%=tank.height%>"</p>
+                <p>Thickness - <%=tank.thickness%></p>
+                <p>Capacity - <%=tank.capacity%> ltrs</p>
+              </div>
             </div>
-          </div>
-          <div class="griditem one">
+          <%})%>
+          <!-- <div class="griditem one">
             <img src="../images/loftimg/300L Loft White.png" class="gridimg">
             <h2 class="gridcontent">300 ltrs</h2>
             <div class="two">
@@ -253,7 +255,7 @@
               <p>Capacity - 1000 ltrs</p>
             </div>
           </div>
-          </div>
+          </div> -->
   </div>
     <!--purchase-->
     <div class="purchase">

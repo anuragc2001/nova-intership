@@ -148,17 +148,19 @@
                 <p>Capacity - 300 ltrs</p>
               </div>
           </div> -->
+          <%p_data.forEach((tank) => {%>
           <div class="griditem one">
             <img src="../images/plasticimg/500L Duracon White.png" class="gridimg">
-            <h2 class="gridcontent">500 ltrs</h2>
+            <h2 class="gridcontent"><%=tank.capacity%> ltrs</h2>
             <div class="two">
-              <p>Diameter - 2.75 ft</p>
-              <p>Height - 3.5 ft</p>
-              <p>Capacity - 500 ltrs</p>
-              <p>Available upto 6 layers</p>
+              <p>Diameter - <%=tank.diameter%> ft</p>
+              <p>Height - <%=tank.height%> ft</p>
+              <p>Capacity - <%=tank.capacity%> ltrs</p>
+              <p>Available upto <%=tank.layer%> layers</p>
             </div>
         </div>
-        <div class="griditem one">
+        <%})%>
+        <!-- <div class="griditem one">
           <img src="../images/plasticimg/750L Duracon Black.png" class="gridimg">
           <h2 class="gridcontent">750 ltrs</h2>
           <div class="two">
@@ -287,7 +289,7 @@
     <p>Capacity - 5000 ltrs</p>
     <p>Available upto 4 layers</p>
   </div>
-</div>
+</div> -->
 <!-- <div class="griditem one">
   <img src="../images/plasticimg/2" class="gridimg">
   <h2 class="gridcontent">200 ltrs</h2>
