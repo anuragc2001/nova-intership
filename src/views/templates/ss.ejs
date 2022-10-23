@@ -151,16 +151,19 @@
                     <h6>Stand material - </h6>
                   </div>
               </div> -->
-              <div class="griditem one">
-                  <img src="../images/ssimg/30L White.png" class="gridimg">
-                  <h2 class="gridcontent">30 ltrs</h2>
-                  <div class="two">
-                    <p>Diameter - 1.25 ft</p>
-            <p>Thickness - 0.6 mm</p>
-            <p>Height - 2 ft</p>
-            <p>Capacity - 30 ltrs</p>
-                  </div>
-              </div>
+              <%ss_data.forEach((tank) => { %>
+                
+                <div class="griditem one">
+                    <img src="../images/ssimg/30L White.png" class="gridimg">
+                    <h2 class="gridcontent">30 ltrs</h2>
+                    <div class="two">
+                      <p>Diameter - <%=tank.diameter%> ft</p>
+              <p>Thickness - <%=tank.thickness%> mm</p>
+              <p>Height - <%=tank.height%> ft</p>
+              <p>Capacity - <%=tank.capcity%> ltrs</p>
+                    </div>
+                </div>
+              <%})%>
               <!-- <div class="griditem one">
                 <img src="../images/ssimg/nova.png" class="gridimg">
                 <h2 class="gridcontent">100 ltrs</h2>
@@ -172,7 +175,7 @@
                   <p>Stand material - Hot Dipped GI</p>
                 </div>
             </div> -->
-            <div class="griditem one">
+            <!-- <div class="griditem one">
               <img src="../images/ssimg/200 Ltrs White.png" class="gridimg">
               <h2 class="gridcontent">200 ltrs</h2>
               <div class="two">
@@ -182,7 +185,7 @@
                 <p>Capacity - 200 ltrs</p>
                 <p>Stand material -  MS Painted Rod</p>
               </div>
-          </div>
+          </div> -->
               <!-- <div class="griditem three">
                   <img src="../images/ssimg/nova.png" class="gridimg four">
                   <h2 class="gridcontent five">3000 ltrs</h2>
@@ -194,7 +197,7 @@
                     <h4>Stand material - </h6>
                   </div>
               </div> -->
-              <div class="griditem one">
+              <!-- <div class="griditem one">
                 <img src="../images/ssimg/300 Ltrs White.png" class="gridimg">
                 <h2 class="gridcontent">300 ltrs</h2>
                 <div class="two">
@@ -248,7 +251,7 @@
           <p>Capacity - 3000 ltrs</p>
           <p>Stand material - Hot Dipped GI</p>
         </div>
-    </div>
+    </div> -->
     <!-- <div class="griditem one">
       <img src="../images/ssimg/nova.png" class="gridimg">
       <h2 class="gridcontent">5000 ltrs</h2>
@@ -260,7 +263,7 @@
         <p>Stand material - Hot Dipped GI</p>
       </div>
   </div> -->
-  <div class="griditem one">
+  <!-- <div class="griditem one">
     <img src="../images/ssimg/7500 L White.png" class="gridimg">
     <h2 class="gridcontent">7500 ltrs</h2>
     <div class="two">
@@ -270,7 +273,7 @@
       <p>Capacity - 7500 ltrs</p>
       <p>Stand material - Hot Dipped GI</p>
     </div>
-</div>
+</div> -->
 <!-- <div class="griditem one">
   <img src="../images/ssimg/nova.png" class="gridimg">
   <h2 class="gridcontent">500 ltrs</h2>
