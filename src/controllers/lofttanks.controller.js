@@ -1,15 +1,18 @@
 const {loftTankModel} = require('../models/tanks.models')
 
-let l_data;
-loftTankModel.find({}, (err, data)=>{
-    if(err){
-        throw err
-    }else{
-        l_data = data;
-    }
-});
 const lofttanks = (req, res, next) => {
-    res.render('lofttanks', {tank: l_data});
+    let queries = [
+        loftTankModel.find({})
+    ]
+    
+    Promise.all(queries)
+        .then((result) => {
+            console.log("l");
+            res.render('lofttanks' , {l_data: result[0]})
+        })
+        .catch((err) => {
+            console.log(err);
+        })
 };
 
 

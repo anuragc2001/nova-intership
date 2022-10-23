@@ -3,41 +3,22 @@ const {plasticTankModel} = require('../models/tanks.models')
 const {loftTankModel} = require('../models/tanks.models')
 
 
-let ss_data, p_data, l_data;
-stainlessSteelTankModel.find({}, (err, data)=>{
-    if(err){
-        throw err
-    }else{
-        ss_data = data;
-        // console.log(data.length);
-    }
-}).limit(4);
-plasticTankModel.find({}, (err, data)=>{
-    if(err){
-        throw err
-    }else{
-        p_data = data;
-        // console.log(data.length);
-    }
-}).limit(4);
-loftTankModel.find({}, (err, data)=>{
-    if(err){
-        throw err
-    }else{
-        l_data = data;
-        // console.log(data.length);
-    }
-}).limit(4);
-
-const data = {
-    ss_data,
-    p_data,
-    l_data,
-}
-
 
 const index = (req, res, next) => {
-    res.render('index', {tanks: data})
+    let queries = [
+        stainlessSteelTankModel.find({}).limit(4),
+        plasticTankModel.find({}).limit(4),
+        loftTankModel.find({}).limit(4)
+    ]
+    
+    Promise.all(queries)
+        .then((result) => {
+            console.log("index");
+            res.render('index', {ss_data: result[0], p_data: result[1], l_data: result[2]})
+        })
+        .catch((err) => {
+            console.log(err);
+        })
 };
 
 
