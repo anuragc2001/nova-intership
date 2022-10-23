@@ -188,7 +188,20 @@
     <div class="pro">
       <h2 id="producthead">Stainless Steel Tanks</h2>
     <div class="typegrid1">
+      <%ss_data.forEach((tank) => { %>
+                
         <div class="griditem1 one">
+          <a href="./templates/ss.ejs"><img src="./images/ssimg/30L White.png" class="gridimg1"></a>
+            <h2 class="gridcontent1"> <%=tank.capacity%> ltrs</h2>
+            <div class="two">
+              <p>Diameter - <%=tank.diameter%> ft</p>
+              <p>Thickness - <%=tank.thickness%> mm</p>
+              <p>Height - <%=tank.height%> ft</p>
+              <p>Capacity - <%=tank.capacity%> ltrs</p>
+            </div>
+        </div>
+      <%})%>
+        <!-- <div class="griditem1 one">
           <a href="./templates/ss.ejs"><img src="./images/ssimg/30L White.png" class="gridimg1"></a>
           <h2 class="gridcontent1">30 ltrs</h2>
           <div class="two">
@@ -232,13 +245,24 @@
         <p>Capacity - 3000 ltrs</p>
         <p>Stand material - Hot Dipped GI</p>
       </div>
-    </div>
+    </div> -->
   </div>
     <div class="pro">
       <h2 id="producthead">Plastic Tanks</h2>
     <div class="typegrid1">
-      
+      <%p_data.forEach((tank) => {%>
         <div class="griditem1 one">
+          <a href="./templates/plastictanks.ejs"><img src="./images/plasticimg/1000L Duracon White.png" class="gridimg1"></a>
+          <h2 class="gridcontent1"><%=tank.capacity%> ltrs</h2>
+          <div class="two">
+            <p>Diameter - <%=tank.diameter%> ft</p>
+            <p>Height - <%=tank.height%> ft</p>
+            <p>Capacity - <%=tank.capacity%> ltrs</p>
+            <p>Available upto <%=tank.layer%> layers</p>
+          </div>
+      </div>
+      <%})%>
+        <!-- <div class="griditem1 one">
           <a href="./templates/plastictanks.ejs"><img src="./images/plasticimg/1000L Duracon White.png" class="gridimg1"></a>
           <h2 class="gridcontent1">1000 ltrs</h2>
           <div class="two">
@@ -282,15 +306,27 @@
             <p>Capacity - 5000 ltrs</p>
             <p>Available upto 4 layers</p>
         </div>
-      </div>
+      </div> -->
 
       </div>
     </div>
     <div class="pro">
       <h2 id="producthead">Loft Tanks</h2>
     <div class="typegrid1">
-      
-      <div class="griditem1 one">
+      <%l_data.forEach((tank) => {%>
+        <div class="griditem1 one">
+          <a href="./templates/lofttanks.ejs"><img src="./images/loftimg/200L Loft White.png" class="gridimg1"></a>
+          <h2 class="gridcontent1"><%=tank.capacity%> ltrs</h2>
+          <div class="two">
+            <p>Length - <%=tank.length%>"</p>
+            <p>Width - <%=tank.width%>"</p>
+            <p>Height - <%=tank.height%>"</p>
+            <p>Thickness - <%=tank.thickness%></p>
+            <p>Capacity - <%=tank.capacity%> ltrs</p>
+          </div>
+        </div>
+      <%})%>
+      <!-- <div class="griditem1 one">
         <a href="./templates/lofttanks.ejs"><img src="./images/loftimg/200L Loft White.png" class="gridimg1"></a>
         <h2 class="gridcontent1">250 ltrs</h2>
         <div class="two">
@@ -334,7 +370,7 @@
               <p>Capacity - 1000 ltrs</p>
         </div>
       </div>
-      
+       -->
 
       </div>
     </div>
