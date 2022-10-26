@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const path = require('path')
 const mongoose = require('mongoose')
+const session = require('express-session')
+const mongodbStore = require('connect-mongodb-session')(session)
 require('dotenv').config();
 
 const webpageRoute = require('./routes/webpage/webpage.routes')
@@ -10,6 +12,13 @@ const adminRoute = require('./routes/admin/admin.routes')
 
 const port = process.env.PORT || 3000;
 const app = express();
+
+const store = new mongodbStore({
+    uri: process.env.MONGO_URI,
+    collection: 'sessions'
+})
+
+app.use(session({ secret: "secretkey", resave: false, saveUninitialized: false, store: store, cookie: {maxAge: 86400}}))
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'));

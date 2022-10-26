@@ -3,7 +3,12 @@ const {SHA256} = require('../../../utils/SHA256')
 const Admin = require('../../models/admin.model')
 
 const getLoginPage = (req, res) => {
-    res.render('auth/login')
+    if(req.session.isLoggedIn === true){
+        console.log("dashboard");
+        res.redirect('/')
+    }else{
+        res.render('auth/login')
+    }
 }
 
 const postLogin = (req, res) => {
@@ -18,16 +23,16 @@ const postLogin = (req, res) => {
                 return res.redirect('/login')
             }
             if (user.password === password) {
-                // req.session.isLoggedIn = true
-                // req.session.User = user
-                // req.session.save(err => {
-                //     if (err) {
-                //         return console.log(err);
-                //     }
-                //     res.redirect('/dashboard')
-                // })
-                console.log('dashboard');
-                res.redirect('/')
+                req.session.isLoggedIn = true
+                req.session.User = user
+                req.session.save(err => {
+                    if (err) {
+                        return console.log(err);
+                    }
+                    console.log('logged in');
+                    res.redirect('/')
+                    // res.redirect('/dashboard')
+                })
             } else {
                 res.send("Incorrect password")
             }
