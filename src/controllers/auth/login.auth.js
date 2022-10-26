@@ -1,3 +1,5 @@
+const {SHA256} = require('../../utils/SHA256')
+
 const Admin = require('../../models/admin.model')
 
 const getLoginPage = (req, res) => {
@@ -7,7 +9,7 @@ const getLoginPage = (req, res) => {
 const postLogin = (req, res) => {
 
     const username = req.body.username
-    const password = req.body.password
+    const password = SHA256(req.body.password)
 
     Admin.findOne({ username: username })
         .then((user) => {
