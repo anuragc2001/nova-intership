@@ -1,5 +1,5 @@
 const download = (req, res, next) => {
-    res.render('download')
+    res.render('templates/download')
 };
 
 

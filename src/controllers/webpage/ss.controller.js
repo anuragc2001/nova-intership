@@ -1,4 +1,4 @@
-const {stainlessSteelTankModel} = require('../models/tanks.models')
+const {stainlessSteelTankModel} = require('../../models/tanks.model')
 
 const ss = (req, res, next) => {
     let queries = [
@@ -8,7 +8,7 @@ const ss = (req, res, next) => {
     Promise.all(queries)
         .then((result) => {
             console.log("s");
-            res.render('ss' , {ss_data: result[0]})
+            res.render('templates/ss' , {ss_data: result[0]})
         })
         .catch((err) => {
             console.log(err);

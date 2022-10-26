@@ -45,82 +45,7 @@
 </head>
 <body onload="mainfunc()">
     <!--header-->
-    <div class="header" id="navbar1">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <div class="navbar-logos">
-                <a href="https://www.facebook.com/amarwoodindustries/"><img src="./images/headerimg/img1.png" class="headerimg"></a>
-                <a href="https://api.whatsapp.com/send/?phone=919701169701&text&type=phone_number&app_absent=0"><img src="../images/headerimg/img2.png" class="headerimg"></a>
-                <a href="https://www.instagram.com/novawaterpure/"><img src="./images/headerimg/img3.png" class="headerimg"></a>
-              </div>
-              <h6>CALL US: (+91) 9701169701, 9394607035</h6>
-            </div>
-        </nav>
-    </div>
-    <!--navbar-->
-    <div class="top" id="hamburger">
-			<a href="#"><img src="./images/Nova Logo1.1 – 3 (Transparent).png" id="mobnav2img1"></a>
-      <a href="#"><img src="./images/DURACON LOGO.png" id="mobnav2img2"></a>
-      <a href="#" class="menu_icon"><i class="material-icons" id="icon">dehaze</i></a>
-		</div>
-    <nav class="menu">
-            <a class="item_menu"><span id="cross">❌</span></a>
-        <br><br><a href="./index.ejs" class="item_menu">Home</a>
-		<a href="./templates/about.ejs" class="item_menu">Company Profile</a>
-		<a href="./templates/why.ejs" class="item_menu">Why Novapure</a>
-		<a href="./templates/ss.ejs" class="item_menu">Stainless Steel Tanks</a>
-		<a href="./templates/plastictanks.ejs" class="item_menu">Plastic Tanks</a>
-    <a href="./templates/lofttanks.ejs" class="item_menu">Loft Tanks</a>
-        <a href="./templates/download.ejs" class="item_menu">Download</a>
-        <a href="./templates/faq.ejs" class="item_menu">FAQ</a>
-        <a href="./templates/contact.ejs" class="item_menu">Contact Us</a>
-    </nav>
-
-    <nav class="navbar navbar-expand-lg" id="navbar2">
-        <div class="container-fluid">
-          <!-- <a href="#"><img src="./images/logo.png" id="navbar2img"></a> -->
-          <a href="#"><img src="./images/Nova Logo1.1 – 3 (Transparent).png" id="nav2img1"></a>
-          <a href="#"><img src="./images/DURACON LOGO.png" id="nav2img2"></a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.ejs" style="color: blue;" id="navbar-item">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbar-item">
-                  About Us
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./templates/about.ejs" id="navbar-item">Company Profile</a></li>
-                  <li><a class="dropdown-item" href="./templates/why.ejs" id="navbar-item">Why Novapure</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbar-item">
-                  Products
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./templates/ss.ejs" id="navbar-item">Stainless Steel(SS) Tanks</a></li>
-                  <li><a class="dropdown-item" href="./templates/plastictanks.ejs" id="navbar-item">Plastic Tanks</a></li>
-                  <li><a class="dropdown-item" href="./templates/lofttanks.ejs" id="navbar-item">Loft Tanks</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./templates/download.ejs" id="navbar-item">Download</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./templates/faq.ejs" id="navbar-item">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./templates/contact.ejs" id="navbar-item">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-
-    <a href="https://api.whatsapp.com/send/?phone=919701169701&text&type=phone_number&app_absent=0"><img src="./images/headerimg/whatsapp-icon.jpg" id="staticimg"></a>
-
+    <%- include('./partials/header.ejs') %>
 
     <!--carousel images-->
     <!-- carousel button-->
@@ -188,7 +113,20 @@
     <div class="pro">
       <h2 id="producthead">Stainless Steel Tanks</h2>
     <div class="typegrid1">
+      <%ss_data.forEach((tank) => { %>
+                
         <div class="griditem1 one">
+          <a href="./templates/ss.ejs"><img src="./images/ssimg/30L White.png" class="gridimg1"></a>
+            <h2 class="gridcontent1"> <%=tank.capacity%> ltrs</h2>
+            <div class="two">
+              <p>Diameter - <%=tank.diameter%> ft</p>
+              <p>Thickness - <%=tank.thickness%> mm</p>
+              <p>Height - <%=tank.height%> ft</p>
+              <p>Capacity - <%=tank.capacity%> ltrs</p>
+            </div>
+        </div>
+      <%})%>
+        <!-- <div class="griditem1 one">
           <a href="./templates/ss.ejs"><img src="./images/ssimg/30L White.png" class="gridimg1"></a>
           <h2 class="gridcontent1">30 ltrs</h2>
           <div class="two">
@@ -232,13 +170,24 @@
         <p>Capacity - 3000 ltrs</p>
         <p>Stand material - Hot Dipped GI</p>
       </div>
-    </div>
+    </div> -->
   </div>
     <div class="pro">
       <h2 id="producthead">Plastic Tanks</h2>
     <div class="typegrid1">
-      
+      <%p_data.forEach((tank) => {%>
         <div class="griditem1 one">
+          <a href="./templates/plastictanks.ejs"><img src="./images/plasticimg/1000L Duracon White.png" class="gridimg1"></a>
+          <h2 class="gridcontent1"><%=tank.capacity%> ltrs</h2>
+          <div class="two">
+            <p>Diameter - <%=tank.diameter%> ft</p>
+            <p>Height - <%=tank.height%> ft</p>
+            <p>Capacity - <%=tank.capacity%> ltrs</p>
+            <p>Available upto <%=tank.layer%> layers</p>
+          </div>
+      </div>
+      <%})%>
+        <!-- <div class="griditem1 one">
           <a href="./templates/plastictanks.ejs"><img src="./images/plasticimg/1000L Duracon White.png" class="gridimg1"></a>
           <h2 class="gridcontent1">1000 ltrs</h2>
           <div class="two">
@@ -282,15 +231,27 @@
             <p>Capacity - 5000 ltrs</p>
             <p>Available upto 4 layers</p>
         </div>
-      </div>
+      </div> -->
 
       </div>
     </div>
     <div class="pro">
       <h2 id="producthead">Loft Tanks</h2>
     <div class="typegrid1">
-      
-      <div class="griditem1 one">
+      <%l_data.forEach((tank) => {%>
+        <div class="griditem1 one">
+          <a href="./templates/lofttanks.ejs"><img src="./images/loftimg/200L Loft White.png" class="gridimg1"></a>
+          <h2 class="gridcontent1"><%=tank.capacity%> ltrs</h2>
+          <div class="two">
+            <p>Length - <%=tank.length%>"</p>
+            <p>Width - <%=tank.width%>"</p>
+            <p>Height - <%=tank.height%>"</p>
+            <p>Thickness - <%=tank.thickness%></p>
+            <p>Capacity - <%=tank.capacity%> ltrs</p>
+          </div>
+        </div>
+      <%})%>
+      <!-- <div class="griditem1 one">
         <a href="./templates/lofttanks.ejs"><img src="./images/loftimg/200L Loft White.png" class="gridimg1"></a>
         <h2 class="gridcontent1">250 ltrs</h2>
         <div class="two">
@@ -334,7 +295,7 @@
               <p>Capacity - 1000 ltrs</p>
         </div>
       </div>
-      
+       -->
 
       </div>
     </div>
@@ -459,38 +420,7 @@
       </div>
   </div>
     <!--footer-->
-    <div class="footer">
-      <h3 id="gst">GST Numbers</h3>
-      <div class="gstflex">
-        <h5 id="gst1">V.V Industries Gst No - 36AAPFV3516P1ZF</h5>
-        <h5 id="gst2">Amar Wood Industries Pvt Ltd - Gst No 36AADCA7091B1ZX</h5>
-      </div>
-      <nav class="navbar navbar-expand-lg" id="footernav">
-          <div class="container-fluid">
-            <div class="para">
-              <h1 class="parahead">Nova Water Pure</h1>
-              <p class="paracontent">The 1981 report of World Health Organization, Geneva reports "Water collected for domestic use often becomes recontaminated or further contaminated by unsafe consumer storage and handling practices at the household level and is at the high risk by various pathogenic viruses, bacteria and parasites causing infectious diseases.</p>
-            </div>
-            <div id="footerproducts">
-              <h4 class="fphead">OUR PRODUCTS</h4>
-              <p class="fp1">Plastic Tanks<br>200-5000L</p>
-              <p class="fp2">Stainless Steel Tanks<br>30-7500L</p>
-              <img src="./images/footer.jpg" id="fpimg">
-            </div>
-            <div class="footercontact">
-              <h3 id="footerhead">Amarwood Industries Pvt Ltd</h3>
-              <h5 id="footeremail">novawaterpure@gmail.com</h5>
-              <h5 id="footernumber">(+91) 9701169701, 9394607035</h5>
-              <h5 id="footernumber">040-27170332, 27159702 / 03</h5>
-              <div class="navbar-logos">
-                <a href="https://www.facebook.com/amarwoodindustries/"><img src="./images/headerimg/img1.png" class="headerimg"></a>
-                <a href="https://api.whatsapp.com/send/?phone=919701169701&text&type=phone_number&app_absent=0"><img src="./images/headerimg/img2.png" class="headerimg"></a>
-                <a href="https://www.instagram.com/novawaterpure/"><img src="./images/headerimg/img3.png" class="headerimg"></a>
-              </div>
-            </div>
-          </div>
-      </nav>
-  </div>
+    <%- include('./partials/footer.ejs') %>
     <!--bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

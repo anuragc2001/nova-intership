@@ -1,6 +1,6 @@
-const {stainlessSteelTankModel} = require('../models/tanks.models')
-const {plasticTankModel} = require('../models/tanks.models')
-const {loftTankModel} = require('../models/tanks.models')
+const {stainlessSteelTankModel} = require('../../models/tanks.model')
+const {plasticTankModel} = require('../../models/tanks.model')
+const {loftTankModel} = require('../../models/tanks.model')
 
 
 

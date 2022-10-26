@@ -1,4 +1,4 @@
-const {loftTankModel} = require('../models/tanks.models')
+const {loftTankModel} = require('../../models/tanks.model')
 
 const lofttanks = (req, res, next) => {
     let queries = [
@@ -8,7 +8,7 @@ const lofttanks = (req, res, next) => {
     Promise.all(queries)
         .then((result) => {
             console.log("l");
-            res.render('lofttanks' , {l_data: result[0]})
+            res.render('templates/lofttanks' , {l_data: result[0]})
         })
         .catch((err) => {
             console.log(err);
