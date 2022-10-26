@@ -1,5 +1,5 @@
 const faq = (req, res, next) => {
-    res.render('faq')
+    res.render('templates/faq')
 };
 
 

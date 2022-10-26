@@ -1,5 +1,5 @@
 const contact = (req, res, next) => {
-    res.render('contact')
+    res.render('templates/contact')
 };
 
 

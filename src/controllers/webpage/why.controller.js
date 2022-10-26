@@ -1,5 +1,5 @@
 const why = (req, res, next) => {
-    res.render('why')
+    res.render('templates/why')
 };
 
 

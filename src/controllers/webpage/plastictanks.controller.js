@@ -1,4 +1,4 @@
-const {plasticTankModel} = require('../models/tanks.models')
+const {plasticTankModel} = require('../../models/tanks.model')
 
 
 const plastictanks = (req, res, next) => {
@@ -9,7 +9,7 @@ const plastictanks = (req, res, next) => {
     Promise.all(queries)
         .then((result) => {
             console.log("p");
-            res.render('plastictanks' , {p_data: result[0]})
+            res.render('templates/plastictanks' , {p_data: result[0]})
         })
         .catch((err) => {
             console.log(err);
