@@ -1,4 +1,4 @@
-const {SHA256} = require('../../utils/SHA256')
+const {SHA256} = require('../../../utils/SHA256')
 
 const Admin = require('../../models/admin.model')
 
