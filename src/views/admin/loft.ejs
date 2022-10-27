@@ -62,75 +62,32 @@
                             <thead>
                                 <tr class="text-dark">
                                     <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Status</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Length</th>
+                                    <th scope="col">Height</th>
+                                    <th scope="col">Thickness</th>
+                                    <th scope="col">Capacity</th>
+                                    <th scope="col">Width</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
+                                <%l_data.forEach((tank) => {%>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox"></td>
+                                        <td><%=tank.length%></td>
+                                        <td><%=tank.length%></td>
+                                        <td><%=tank.height%></td>
+                                        <td><%=tank.thickness%></td>
+                                        <td><%=tank.capacity%></td>
+                                        <td><%=tank.width%></td>
+                                        <td><a class="btn btn-sm btn-primary">View</a>
+                                            <a class="btn btn-sm btn-success">Add</a>
+                                            <a class="btn btn-sm btn-warning">Update</a>
+                                            <a class="btn btn-sm btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                <%})%>
                             </tbody>
                         </table>
                     </div>

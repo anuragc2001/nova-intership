@@ -55,7 +55,7 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
+                        <h6 class="mb-0">Stainless Steel Tanks</h6>
                         <a href="">Show All</a>
                     </div>
                     <div class="table-responsive">
@@ -63,75 +63,32 @@
                             <thead>
                                 <tr class="text-dark">
                                     <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Invoice</th>
-                                    <th scope="col">Customer</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Status</th>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Diameter</th>
+                                    <th scope="col">Height</th>
+                                    <th scope="col">Capacity</th>
+                                    <th scope="col">Thickness</th>
+                                    <th scope="col">Stand Mat.</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
-                                <tr>
-                                    <td><input class="form-check-input" type="checkbox"></td>
-                                    <td>01 Jan 2045</td>
-                                    <td>INV-0123</td>
-                                    <td>Jhon Doe</td>
-                                    <td>$123</td>
-                                    <td>Paid</td>
-                                    <td><a class="btn btn-sm btn-primary">View</a>
-                                        <a class="btn btn-sm btn-success">Add</a>
-                                        <a class="btn btn-sm btn-warning">Update</a>
-                                        <a class="btn btn-sm btn-danger">Delete</a></td>
-                                </tr>
+                                <%ss_data.forEach((tank) => {%>
+                                    <tr>
+                                        <td><input class="form-check-input" type="checkbox"></td>
+                                        <td><%=tank.diameter%></td>
+                                        <td><%=tank.height%></td>
+                                        <td><%=tank.capacity%></td>
+                                        <td><%=tank.thickness%></td>
+                                        <td><%=tank.standMaterial%></td>
+                                        <td><%=tank.diameter%></td>
+                                        <td><a class="btn btn-sm btn-primary">View</a>
+                                            <a class="btn btn-sm btn-success">Add</a>
+                                            <a class="btn btn-sm btn-warning">Update</a>
+                                            <a class="btn btn-sm btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                <%})%>
                             </tbody>
                         </table>
                     </div>
