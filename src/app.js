@@ -18,7 +18,7 @@ const store = new mongodbStore({
     collection: 'sessions'
 })
 
-app.use(session({ secret: "secretkey", resave: false, saveUninitialized: false, store: store, cookie: {maxAge: 86400}}))
+app.use(session({ secret: "secretkey", resave: false, saveUninitialized: false, store: store, cookie: {maxAge: 12 * 60 * 60 * 1000}}))
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'));
