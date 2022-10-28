@@ -54,7 +54,10 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Salse</h6>
+                        <h6 class="mb-0">Loft Tank</h6>
+                        <form action="/addl" method="GET">
+                            <button class="btn btn-sm btn-success">Add</button>
+                        </form>
                         <a href="">Show All</a>
                     </div>
                     <div class="table-responsive">
@@ -75,8 +78,8 @@
                                 <%l_data.forEach((tank) => {%>
                                     <tr>
                                         <td><input class="form-check-input" type="checkbox"></td>
-                                        <td><%=tank.length%></td>
-                                        <td><%=tank.length%></td>
+                                        <td><%=tank.lengths%></td>
+                                        <td><%=tank.lengths%></td>
                                         <td><%=tank.height%></td>
                                         <td><%=tank.thickness%></td>
                                         <td><%=tank.capacity%></td>

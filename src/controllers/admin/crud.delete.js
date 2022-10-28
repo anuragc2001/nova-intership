@@ -6,8 +6,9 @@ let id_ss, id_p, id_l
 const postDeleteSS = (req, res) => {
     id_ss = req.body.id
     stainlessSteelTankModel.deleteOne({_id: id_ss})
-
-    res.redirect('/deletess')
+    .then((eer) => {
+        res.redirect('/dashboard')
+    })
 }
 const getDeleteSS = (req, res) => {
     
@@ -16,8 +17,9 @@ const getDeleteSS = (req, res) => {
 const postDeleteP = (req, res) => {
     id_p = req.body.id
     plasticTankModel.deleteOne({_id: id_p})
-    
-    res.redirect('/deletep')
+    .then((eer) => {
+        res.redirect('/dashboard')
+    })
 }
 const getDeleteP = (req, res) => {
 
@@ -26,8 +28,10 @@ const getDeleteP = (req, res) => {
 const postDeleteL = (req, res) => {
     id_l = req.body.id
     loftTankModel.deleteOne({_id: id_l})
-    
-    res.redirect('/deletel')
+    .then((eer) => {
+        res.redirect('/dashboard')
+    })
+
 }
 const getDeleteL = (req, res) => {
 
