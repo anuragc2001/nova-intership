@@ -4,7 +4,6 @@ const Admin = require('../../models/admin.model')
 
 const getLoginPage = (req, res) => {
     if(req.session.isLoggedIn === true){
-        console.log("dashboard");
         res.redirect('/dashboard')
     }else{
         res.render('auth/login')
@@ -13,8 +12,8 @@ const getLoginPage = (req, res) => {
 
 const postLogin = (req, res) => {
 
-    const username = req.body.username
-    const password = SHA256(req.body.password)
+    const username = String(req.body.username)
+    const password = SHA256(String(req.body.password))
 
     Admin.findOne({ username: username })
         .then((user) => {
@@ -29,7 +28,6 @@ const postLogin = (req, res) => {
                     if (err) {
                         return console.log(err);
                     }
-                    console.log('logged in');
                     res.redirect('/dashboard')
                 })
             } else {

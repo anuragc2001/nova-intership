@@ -7,8 +7,6 @@ const loft = (req, res, next) => {
     
     Promise.all(queries)
         .then((result) => {
-            console.log("l");
-            console.log(req.User);
             res.render('admin/loft' , {u_name: req.User.adminName, l_data: result[0]})
         })
         .catch((err) => {

@@ -83,16 +83,25 @@
                                 <%ss_data.forEach((tank) => {%>
                                     <tr>
                                         <td><input class="form-check-input" type="checkbox"></td>
+                                        <td><%=tank.category%></td>
                                         <td><%=tank.diameter%></td>
                                         <td><%=tank.height%></td>
                                         <td><%=tank.capacity%></td>
                                         <td><%=tank.thickness%></td>
                                         <td><%=tank.standMaterial%></td>
-                                        <td><%=tank.diameter%></td>
-                                        <td><a class="btn btn-sm btn-primary">View</a>
-                                            <a class="btn btn-sm btn-success">Add</a>
-                                            <a class="btn btn-sm btn-warning">Update</a>
-                                            <a class="btn btn-sm btn-danger">Delete</a>
+                                        <td>
+                                            <form action="/viewss" method="POST">
+                                                <button class="btn btn-sm btn-primary" name="id" value="<%=tank._id%>">View</button>
+                                            </form>
+                                            <form action="/addss" method="GET">
+                                                <button class="btn btn-sm btn-success">Add</button>
+                                            </form>
+                                            <form action="/updatess" method="POST">
+                                                <button class="btn btn-sm btn-warning" name="id" value="<%=tank._id%>">Update</button>
+                                            </form>
+                                            <form action="/deletess" method="POST">
+                                                <button class="btn btn-sm btn-danger" name="id" value="<%=tank._id%>">Delete</button>
+                                            </form>
                                         </td>
                                     </tr>
                                 <%})%>
@@ -124,15 +133,24 @@
                                 <%p_data.forEach((tank) => {%>
                                     <tr>
                                         <td><input class="form-check-input" type="checkbox"></td>
-                                        <td><%=tank.diameter%></td>
+                                        <td><%=tank.category%></td>
                                         <td><%=tank.diameter%></td>
                                         <td><%=tank.height%></td>
                                         <td><%=tank.capacity%></td>
                                         <td><%=tank.layer%></td>
-                                        <td><a class="btn btn-sm btn-primary">View</a>
-                                            <a class="btn btn-sm btn-success">Add</a>
-                                            <a class="btn btn-sm btn-warning">Update</a>
-                                            <a class="btn btn-sm btn-danger">Delete</a>
+                                        <td>
+                                            <form action="/viewp" method="POST">
+                                                <button class="btn btn-sm btn-primary" name="id" value="<%=tank._id%>">View</button>
+                                            </form>
+                                            <form action="/addp" method="GET">
+                                                <button class="btn btn-sm btn-success">Add</button>
+                                            </form>
+                                            <form action="/updatep" method="POST">
+                                                <button class="btn btn-sm btn-warning" name="id" value="<%=tank._id%>">Update</button>
+                                            </form>
+                                            <form action="/deletep" method="POST">
+                                                <button class="btn btn-sm btn-danger" name="id" value="<%=tank._id%>">Delete</button>
+                                            </form>
                                         </td>
                                     </tr>
                                 <%})%>
@@ -165,16 +183,25 @@
                                 <%l_data.forEach((tank) => {%>
                                     <tr>
                                         <td><input class="form-check-input" type="checkbox"></td>
-                                        <td><%=tank.length%></td>
-                                        <td><%=tank.length%></td>
+                                        <td><%=tank.category%></td>
+                                        <td><%=tank.lengths%></td>
                                         <td><%=tank.height%></td>
                                         <td><%=tank.thickness%></td>
                                         <td><%=tank.capacity%></td>
                                         <td><%=tank.width%></td>
-                                        <td><a class="btn btn-sm btn-primary">View</a>
-                                            <a class="btn btn-sm btn-success">Add</a>
-                                            <a class="btn btn-sm btn-warning">Update</a>
-                                            <a class="btn btn-sm btn-danger">Delete</a>
+                                        <td>
+                                            <form action="/viewl" method="POST">
+                                                <button class="btn btn-sm btn-primary" name="id" value="<%=tank._id%>">View</button>
+                                            </form>
+                                            <form action="/addl" method="GET">
+                                                <button class="btn btn-sm btn-success">Add</button>
+                                            </form>
+                                            <form action="/updatel" method="POST">
+                                                <button class="btn btn-sm btn-warning" name="id" value="<%=tank._id%>">Update</button>
+                                            </form>
+                                            <form action="/deletel" method="POST">
+                                                <button class="btn btn-sm btn-danger" name="id" value="<%=tank._id%>">Delete</button>
+                                            </form>
                                         </td>
                                     </tr>
                                 <%})%>

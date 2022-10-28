@@ -61,7 +61,7 @@ let loftTank = new Schema({
         type: String,
         required: false,
     },
-    length: {
+    lengths: {
         type: Number,
         required: true,
     },
