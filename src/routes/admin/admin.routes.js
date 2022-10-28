@@ -16,11 +16,8 @@ route.get("/stainless", auth, stainless);
 route.get("/loft", auth, loft);
 
 route.post("/viewss", auth, View.postViewSS);
-route.get("/viewss", auth, View.getViewSS);
 route.post("/viewp", auth, View.postViewP);
-route.get("/viewp", auth, View.getViewP);
 route.post("/viewl", auth, View.postViewL);
-route.get("/viewl", auth, View.getViewL);
 
 route.post("/addss", auth, Add.postAddSST);
 route.get("/addss", auth, Add.getAddSST);
