@@ -8,7 +8,6 @@ const plastictanks = (req, res, next) => {
     
     Promise.all(queries)
         .then((result) => {
-            console.log("p");
             res.render('templates/plastictanks' , {p_data: result[0]})
         })
         .catch((err) => {

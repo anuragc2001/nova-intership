@@ -23,7 +23,6 @@ const postAddSST = (req, res) => {
         if(err){
             console.log(err);
         }else{
-            console.log("data added");
             res.redirect('/stainless')
         }
     })
@@ -47,7 +46,6 @@ const postAddPT = (req, res) => {
         if(err){
             console.log(err);
         }else{
-            console.log("data added");
             res.redirect('/plastic')
         }
 
@@ -75,10 +73,9 @@ const postAddLT = (req, res) => {
     l.save((err) => {
         if(err){
             console.log(err);
+        }else{
+            res.redirect('/loft')
         }
-
-        console.log("data added");
-        res.redirect('/loft')
     })
 }
 

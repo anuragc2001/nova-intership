@@ -28,7 +28,6 @@ const postLogin = (req, res) => {
                     if (err) {
                         return console.log(err);
                     }
-                    console.log('logged in');
                     res.redirect('/dashboard')
                 })
             } else {
