@@ -71,6 +71,7 @@
                                     <th scope="col">Thickness</th>
                                     <th scope="col">Capacity</th>
                                     <th scope="col">Width</th>
+                                    <th scope="col">Stand Mat.</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -84,6 +85,7 @@
                                         <td><%=tank.thickness%></td>
                                         <td><%=tank.capacity%></td>
                                         <td><%=tank.width%></td>
+                                        <td><%=tank.standMaterial%></td>
                                         <td>
                                             <form action="/viewl" method="POST">
                                                 <button class="btn btn-sm btn-primary" name="id" value="<%=tank._id%>">View</button>
@@ -91,7 +93,7 @@
                                             <form action="/addl" method="GET">
                                                 <button class="btn btn-sm btn-success">Add</button>
                                             </form>
-                                            <form action="/updatel" method="POST">
+                                            <form action="/updatel" method="GET">
                                                 <button class="btn btn-sm btn-warning" name="id" value="<%=tank._id%>">Update</button>
                                             </form>
                                             <form action="/deletel" method="POST">

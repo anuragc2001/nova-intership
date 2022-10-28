@@ -26,9 +26,12 @@ route.get("/addp", auth, Add.getAddPT);
 route.post("/addl", auth, Add.postAddLT);
 route.get("/addl", auth, Add.getAddLT);
 
-route.post("/updatess", loft);
-route.post("/updatep", loft);
-route.post("/updatel", loft);
+route.post("/updatess", auth, Update.putAddSST);
+route.get("/updatess", auth, Update.getAddSST);
+route.post("/updatep", auth, Update.putAddPT);
+route.get("/updatep", auth, Update.getAddPT);
+route.post("/updatel", auth, Update.putAddLT);
+route.get("/updatel", auth, Update.getAddLT);
 
 route.post("/deletess", auth, Delete.postDeleteSS);
 route.post("/deletep", auth, Delete.postDeleteP);
