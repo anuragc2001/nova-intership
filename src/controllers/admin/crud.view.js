@@ -10,7 +10,6 @@ const postViewSS = (req, res) => {
     res.redirect('/viewss')
 }
 const getViewSS = (req, res) => {
-    console.log(id_ss);
     stainlessSteelTankModel.findById(id_ss)
     .then((data) => {
         res.render('admin/product', {u_name: req.User.adminName, data: data})
@@ -22,7 +21,6 @@ const postViewP = (req, res) => {
     res.redirect('/viewp')
 }
 const getViewP = (req, res) => {
-    console.log(id_p);
     plasticTankModel.findById(id_p)
     .then((data) => {
         res.render('admin/product', {u_name: req.User.adminName, data: data})
