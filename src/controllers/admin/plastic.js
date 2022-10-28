@@ -7,7 +7,6 @@ const plastic = (req, res, next) => {
     
     Promise.all(queries)
         .then((result) => {
-            console.log("p");
             console.log(req.User);
             res.render('admin/plastic' , {u_name: req.User.adminName, p_data: result[0]})
         })

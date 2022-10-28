@@ -82,10 +82,19 @@
                                         <td><%=tank.thickness%></td>
                                         <td><%=tank.standMaterial%></td>
                                         <td><%=tank.diameter%></td>
-                                        <td><a class="btn btn-sm btn-primary">View</a>
-                                            <a class="btn btn-sm btn-success">Add</a>
-                                            <a class="btn btn-sm btn-warning">Update</a>
-                                            <a class="btn btn-sm btn-danger">Delete</a>
+                                        <td>
+                                            <form action="/viewss" method="POST">
+                                                <button class="btn btn-sm btn-primary" name="id" value="<%=tank._id%>">View</button>
+                                            </form>
+                                            <form action="/addss" method="POST">
+                                                <button class="btn btn-sm btn-success" name="id" value="<%=tank._id%>">Add</button>
+                                            </form>
+                                            <form action="/updatess" method="POST">
+                                                <button class="btn btn-sm btn-warning" name="id" value="<%=tank._id%>">Update</button>
+                                            </form>
+                                            <form action="/deletess" method="POST">
+                                                <button class="btn btn-sm btn-danger" name="id" value="<%=tank._id%>">Delete</button>
+                                            </form>
                                         </td>
                                     </tr>
                                 <%})%>

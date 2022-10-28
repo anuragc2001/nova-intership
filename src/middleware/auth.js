@@ -4,6 +4,7 @@ const auth = (req, res, next) => {
         next()
 
     }else {
+        console.log("not logged");
         res.redirect('/login')
     }
  
