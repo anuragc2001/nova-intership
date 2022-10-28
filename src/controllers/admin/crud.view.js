@@ -1,4 +1,9 @@
+const {stainlessSteelTankModel} = require('../../models/tanks.model')
+const {plasticTankModel} = require('../../models/tanks.model')
+const {loftTankModel} = require('../../models/tanks.model')
+
 let id_ss, id_p, id_l
+
 const postViewSS = (req, res) => {
     id_ss = req.body.id
 
@@ -6,7 +11,10 @@ const postViewSS = (req, res) => {
 }
 const getViewSS = (req, res) => {
     console.log(id_ss);
-    res.redirect('/dashboard')
+    stainlessSteelTankModel.findById(id_ss)
+    .then((data) => {
+        res.render('admin/product', {u_name: req.User.adminName, data: data})
+    })
 }
 const postViewP = (req, res) => {
     id_p = req.body.id
@@ -15,7 +23,10 @@ const postViewP = (req, res) => {
 }
 const getViewP = (req, res) => {
     console.log(id_p);
-    res.redirect('/dashboard')
+    plasticTankModel.findById(id_p)
+    .then((data) => {
+        res.render('admin/product', {u_name: req.User.adminName, data: data})
+    })
 }
 const postViewL = (req, res) => {
     id_l = req.body.id
@@ -24,7 +35,10 @@ const postViewL = (req, res) => {
 }
 const getViewL = (req, res) => {
     console.log(id_l);
-    res.redirect('/dashboard')
+    loftTankModel.findById(id_l)
+    .then((data) => {
+        res.render('admin/product', {u_name: req.User.adminName, data: data})
+    })
 }
 module.exports = {
     postViewSS,

@@ -5,6 +5,10 @@ const Schema = mongoose.Schema;
 
 let stainlessSteelTank = new Schema({
 
+    category :{
+      type: String,
+      required: false,
+    },
     diameter: {
       type: Number,
       required: true,
@@ -30,6 +34,10 @@ let stainlessSteelTank = new Schema({
 
 let plasticTank = new Schema({
 
+    category :{
+        type: String,
+        required: false,
+    },
     diameter: {
         type: Number,
         required: true,
@@ -49,8 +57,11 @@ let plasticTank = new Schema({
   });
 
 let loftTank = new Schema({
-
-    length: {
+    category :{
+        type: String,
+        required: false,
+    },
+    lengths: {
         type: Number,
         required: true,
     },

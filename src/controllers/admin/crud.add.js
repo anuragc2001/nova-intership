@@ -2,14 +2,16 @@ const {stainlessSteelTankModel} = require('../../models/tanks.model')
 const {plasticTankModel} = require('../../models/tanks.model')
 const {loftTankModel} = require('../../models/tanks.model')
 
-const addSST = (req, res) => {
+const postAddSST = (req, res) => {
     const diameter = req.body.diameter
     const thickness = req.body.thickness
     const height = req.body.height
     const capacity = req.body.capacity
     const standMaterial = req.body.standMaterial
+    const category = req.body.category
 
     const ss = new stainlessSteelTankModel({
+        category,
         diameter,
         thickness,
         height,
@@ -22,17 +24,19 @@ const addSST = (req, res) => {
             console.log(err);
         }else{
             console.log("data added");
-            res.redirect('/dashboard')
+            res.redirect('/stainless')
         }
     })
 }
-const addPT = (req, res) => {
+const postAddPT = (req, res) => {
     const diameter = req.body.diameter
     const height = req.body.height
     const capacity = req.body.capacity
     const layer = req.body.layer
+    const category = req.body.category
 
     const p = new plasticTankModel({
+        category,
         diameter,
         height,
         capacity,
@@ -49,15 +53,17 @@ const addPT = (req, res) => {
 
     })
 }
-const addLT = (req, res) => {
+const postAddLT = (req, res) => {
     const lengths = req.body.lengths
     const width = req.body.width
     const height = req.body.height
     const thickness = req.body.thickness
     const capacity = req.body.capacity
     const standMaterial = req.body.standMaterial
+    const category = req.body.category
 
     const l = new loftTankModel({
+        category,
         lengths,
         width,
         height,
@@ -76,8 +82,22 @@ const addLT = (req, res) => {
     })
 }
 
+const getAddSST = (req, res) => {
+    res.render('admin/ss_form', {u_name: req.User.adminName})
+}
+const getAddPT = (req, res) => {
+    res.render('admin/p_form', {u_name: req.User.adminName})
+}
+const getAddLT = (req, res) => {
+    res.render('admin/l_form', {u_name: req.User.adminName})
+}
+
+
 module.exports = {
-    addSST,
-    addPT,
-    addLT
+    postAddSST,
+    postAddPT,
+    postAddLT,
+    getAddSST,
+    getAddPT,
+    getAddLT
 }

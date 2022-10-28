@@ -15,27 +15,34 @@ route.get("/plastic", auth, plastic);
 route.get("/stainless", auth, stainless);
 route.get("/loft", auth, loft);
 
-route.post("/viewss", View.postViewSS);
-route.get("/viewss", View.getViewSS);
-route.post("/viewp", View.postViewP);
-route.get("/viewp", View.getViewP);
-route.post("/viewl", View.postViewL);
-route.get("/viewl", View.getViewL);
+route.post("/viewss", auth, View.postViewSS);
+route.get("/viewss", auth, View.getViewSS);
+route.post("/viewp", auth, View.postViewP);
+route.get("/viewp", auth, View.getViewP);
+route.post("/viewl", auth, View.postViewL);
+route.get("/viewl", auth, View.getViewL);
 
-route.post("/addss", Add.addSST);
-route.post("/addp", Add.addPT);
-route.post("/addl", Add.addLT);
+route.post("/addss", auth, Add.postAddSST);
+route.get("/addss", auth, Add.getAddSST);
+route.post("/addp", auth, Add.postAddPT);
+route.get("/addp", auth, Add.getAddPT);
+route.post("/addl", auth, Add.postAddLT);
+route.get("/addl", auth, Add.getAddLT);
 
 route.post("/updatess", loft);
 route.post("/updatep", loft);
 route.post("/updatel", loft);
 
-route.post("/deletess", Delete.postDeleteSS);
-route.get("/deletess", Delete.getDeleteSS);
-route.post("/deletep", Delete.postDeleteP);
-route.get("/deletep", Delete.getDeleteP);
-route.post("/deletel", Delete.postDeleteL);
-route.get("/deletel", Delete.getDeleteL);
+route.post("/deletess", auth, Delete.postDeleteSS);
+route.get("/deletess", auth, Delete.getDeleteSS);
+route.post("/deletep", auth, Delete.postDeleteP);
+route.get("/deletep", auth, Delete.getDeleteP);
+route.post("/deletel", auth, Delete.postDeleteL);
+route.get("/deletel", auth, Delete.getDeleteL);
+
+// route.get('/productview', auth, (req, res) => {
+//     res.render('admin/product', {u_name: req.User.adminName})
+// })
 // route.get("/dashboard", auth, dashboard);
 // route.get("/dashboard", auth, dashboard);
 
