@@ -34,16 +34,8 @@ route.post("/updatep", loft);
 route.post("/updatel", loft);
 
 route.post("/deletess", auth, Delete.postDeleteSS);
-route.get("/deletess", auth, Delete.getDeleteSS);
 route.post("/deletep", auth, Delete.postDeleteP);
-route.get("/deletep", auth, Delete.getDeleteP);
 route.post("/deletel", auth, Delete.postDeleteL);
-route.get("/deletel", auth, Delete.getDeleteL);
 
-// route.get('/productview', auth, (req, res) => {
-//     res.render('admin/product', {u_name: req.User.adminName})
-// })
-// route.get("/dashboard", auth, dashboard);
-// route.get("/dashboard", auth, dashboard);
 
 module.exports = route

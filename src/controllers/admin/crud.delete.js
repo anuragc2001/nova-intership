@@ -10,10 +10,7 @@ const postDeleteSS = (req, res) => {
         res.redirect('/dashboard')
     })
 }
-const getDeleteSS = (req, res) => {
-    
-    res.redirect('/dashboard')
-}
+
 const postDeleteP = (req, res) => {
     id_p = req.body.id
     plasticTankModel.deleteOne({_id: id_p})
@@ -21,10 +18,7 @@ const postDeleteP = (req, res) => {
         res.redirect('/dashboard')
     })
 }
-const getDeleteP = (req, res) => {
 
-    res.redirect('/dashboard')
-}
 const postDeleteL = (req, res) => {
     id_l = req.body.id
     loftTankModel.deleteOne({_id: id_l})
@@ -33,15 +27,9 @@ const postDeleteL = (req, res) => {
     })
 
 }
-const getDeleteL = (req, res) => {
 
-    res.redirect('/dashboard')
-}
 module.exports = {
     postDeleteSS,
-    getDeleteSS,
     postDeleteP,
-    getDeleteP,
     postDeleteL,
-    getDeleteL
 }
