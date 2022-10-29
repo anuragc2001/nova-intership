@@ -116,16 +116,38 @@
       <%ss_data.forEach((tank) => { %>
                 
         <div class="griditem1 one">
-          <a href="./templates/ss.ejs"><img src="./images/ssimg/30L White.png" class="gridimg1"></a>
+          <a href="/tank/<%=tank._id%>"><img src="./images/ssimg/30L White.png" class="gridimg1">
             <h2 class="gridcontent1"> <%=tank.capacity%> ltrs</h2>
             <div class="two">
+
               <p>Diameter - <%=tank.diameter%> ft</p>
               <p>Thickness - <%=tank.thickness%> mm</p>
               <p>Height - <%=tank.height%> ft</p>
               <p>Capacity - <%=tank.capacity%> ltrs</p>
-            </div>
+              <p>Stand material - <%=tank.standMaterial%></p>
+            </div></a>
+
         </div>
       <%})%>
+
+      <!-- <link rel="stylesheet" href="style.css">
+      <div class="cards">
+      
+          <a href="http://" style="text-decoration: none;color: black;">
+            put the link where u want to show the card -->
+         <!-- <div class="card"
+            style="width: 18 rem;">
+            <img src="https://picsum.photos/200/100" alt="..." class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Selectable Title 1</h2>
+              <p>
+                You can select this text even though the whole card is clickable. <a href="#1">Read more...</a>
+              </p>
+            </div>
+          </div>
+          </a>
+ -->
+
         <!-- <div class="griditem1 one">
           <a href="./templates/ss.ejs"><img src="./images/ssimg/30L White.png" class="gridimg1"></a>
           <h2 class="gridcontent1">30 ltrs</h2>
@@ -177,7 +199,7 @@
     <div class="typegrid1">
       <%p_data.forEach((tank) => {%>
         <div class="griditem1 one">
-          <a href="./templates/plastictanks.ejs"><img src="./images/plasticimg/1000L Duracon White.png" class="gridimg1"></a>
+          <a href="/tank/<%=tank._id%>"><img src="./images/plasticimg/1000L Duracon White.png" class="gridimg1"></a>
           <h2 class="gridcontent1"><%=tank.capacity%> ltrs</h2>
           <div class="two">
             <p>Diameter - <%=tank.diameter%> ft</p>
@@ -240,7 +262,7 @@
     <div class="typegrid1">
       <%l_data.forEach((tank) => {%>
         <div class="griditem1 one">
-          <a href="./templates/lofttanks.ejs"><img src="./images/loftimg/200L Loft White.png" class="gridimg1"></a>
+          <a href="/tank/<%=tank._id%>"><img src="./images/loftimg/200L Loft White.png" class="gridimg1"></a>
           <h2 class="gridcontent1"><%=tank.capacity%> ltrs</h2>
           <div class="two">
             <p>Length - <%=tank.length%>"</p>

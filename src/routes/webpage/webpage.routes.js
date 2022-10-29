@@ -10,7 +10,7 @@ const {lofttanks} = require('../../controllers/webpage/lofttanks.controller');
 const {plastictanks} = require('../../controllers/webpage/plastictanks.controller');
 const {ss} = require('../../controllers/webpage/ss.controller');
 const {why} = require('../../controllers/webpage/why.controller');
-
+const { product } = require('../../controllers/webpage/product.controller');
 
 route.get('/', index)
 
@@ -33,5 +33,7 @@ route.get('/lofttanks', lofttanks)
 route.get('/plastictanks', plastictanks)
 
 route.get('/stainlesssteeltanks', ss)
+
+route.get('/tank/:id', product)
 
 module.exports = route
